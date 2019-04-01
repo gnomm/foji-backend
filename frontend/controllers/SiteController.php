@@ -62,7 +62,6 @@ class SiteController extends Controller
     {
         $model = new SignupForm();
         if ( $model->load(Yii::$app->request->bodyParams, '') && $model->signup()) {
-            Yii::$app->session;
             return true;
         } else {
             return $model->getErrors();
