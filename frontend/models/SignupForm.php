@@ -19,9 +19,9 @@ class SignupForm extends Model
     {
         return [
             ['email', 'trim'],
-            //['email','password', 'required'],
+            [['email','password'], 'required'],
             ['email', 'email'],
-            ['email', 'string', 'max' => 30],
+            ['email', 'string', 'max' => 50],
             ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
             ['password', 'string', 'min' => 6]
         ];
