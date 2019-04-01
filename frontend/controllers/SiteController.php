@@ -2,12 +2,15 @@
 namespace frontend\controllers;
 
 
+use common\models\Project;
+use common\models\query\ProjectQuery;
+use common\models\query\UserProfileQuery;
+use common\models\User;
+use common\models\UserProfile;
 use Yii;
 use yii\rest\Controller;
 use frontend\models\LoginForm;
 use frontend\models\SignupForm;
-use yii\web\Request;
-use yii\web\Response;
 
 /**
  * Site controller
@@ -21,9 +24,27 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+//        return Yii::$app->user->identity;
+        if (Yii::$app->user->isGuest)
+        {
+            $_user = 'guest';
+        }else {
+            $_user = Yii::$app->user->identity;
+            $userProfile = UserProfile::findOne(['user_id' => $_user['id']]);
+
+        }
+
+        $projects = Project::find()->immediate(6);
+
         return [
-            'test' => 'test',
+            'id' => $_user['id'],
+            'name' => $userProfile['name'],
+            'lastName' => $userProfile['lastName'],
+            'city' => $userProfile['city'],
+            'avatar_url' => $userProfile['avatar_url'],
+            'Projects_on_index' => $projects,
         ];
+
     }
 
     /**

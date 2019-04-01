@@ -23,7 +23,7 @@ use yii\web\IdentityInterface;
  * @property Project[] $projects
  * @property ProjectCalendar[] $projectCalendars
  * @property ProjectFeedback[] $projectFeedbacks
- * @property UserProfile[] $userProfiles
+ * @property UserProfile[] $userProfile
  * @property UserToken[] $userTokens
  */
 class User extends ActiveRecord implements IdentityInterface
@@ -224,17 +224,9 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getUserProfiles()
+    public function getUserProfile()
     {
-        return $this->hasMany(UserProfile::className(), ['user_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getUserTokens()
-    {
-        return $this->hasMany(UserToken::className(), ['user_id' => 'id']);
+        return $this->hasOne(UserProfile::className(), ['user_id' => 'id']);
     }
 
     /**

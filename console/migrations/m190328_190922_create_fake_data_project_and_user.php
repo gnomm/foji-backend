@@ -19,6 +19,17 @@ class m190328_190922_create_fake_data_project_and_user extends Migration
             $user->password = $faker->password;
             $user->auth_key = $faker->password(32);
             if ($user->save()) {
+                $userProfile = new \common\models\UserProfile();
+                $userProfile->user_id = $user->id;
+                $userProfile->name = $faker->firstName;
+                $userProfile->lastName = $faker->lastName;
+                $userProfile->city = $faker->city;
+                $userProfile->phone = $faker->phoneNumber;
+                $userProfile->avatar_url = $faker->imageUrl(100);
+                $userProfile->updated_at = $faker->randomNumber(5);
+                $userProfile->phone = $faker->phoneNumber;
+                $userProfile->phone = $faker->phoneNumber;
+
                 $project = new \common\models\Project();
                 $project->name = $faker->text(20);
                 $project->theme = $faker->text(8);

@@ -2,6 +2,8 @@
 
 namespace common\models\query;
 
+use yii\db\Query;
+
 /**
  * This is the ActiveQuery class for [[\common\models\Project]].
  *
@@ -9,6 +11,34 @@ namespace common\models\query;
  */
 class ProjectQuery extends \yii\db\ActiveQuery
 {
+    public function immediate($limit)
+    {
+        return $this->select([
+            'id',
+            'name',
+            'theme',
+            'location',
+            'how_to_get',
+            'date_start',
+            'date_end',
+            'time_start',
+            'time_end',
+            'duration',
+            'qty_photos',
+            'path_images',
+            'makeup',
+            'hairstyle',
+            'costume',
+            'prepayment',
+            'payment_method',
+            'price',
+            ])
+            ->where('date_start >= now()')
+            ->orderBy('date_start')
+            ->limit($limit)
+            ->all();
+    }
+
     public function forUser($userId)
     {
         return $this->andWhere(['user_id' => $userId]);

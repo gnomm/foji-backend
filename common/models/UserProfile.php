@@ -9,7 +9,7 @@ use Yii;
  *
  * @property int $id
  * @property string $name
- * @property string $surname
+ * @property string $lastName
  * @property string $city
  * @property string $phone
  * @property int $phone_status
@@ -43,7 +43,7 @@ class UserProfile extends \yii\db\ActiveRecord
             [['birthday'], 'safe'],
             [['info'], 'string'],
             [['created_at', 'updated_at', 'user_id'], 'required'],
-            [['name', 'surname', 'city', 'phone'], 'string', 'max' => 20],
+            [['name', 'lastName', 'city', 'phone'], 'string', 'max' => 20],
             [['avatar_url'], 'string', 'max' => 255],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
@@ -57,7 +57,7 @@ class UserProfile extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'name' => 'Name',
-            'surname' => 'Surname',
+            'lastName' => 'lastName',
             'city' => 'City',
             'phone' => 'Phone',
             'phone_status' => 'Phone Status',

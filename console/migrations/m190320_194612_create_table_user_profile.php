@@ -20,7 +20,7 @@ class m190320_194612_create_table_user_profile extends Migration
         $this->createTable('user_profile', [
             'id' => $this->primaryKey(),
             'name' => $this->string(20),
-            'surname' => $this->string(20),
+            'lastName' => $this->string(20),
             'city' => $this->string(20),
             'phone' => $this->string(20),
             'phone_status' => $this->tinyInteger()->defaultValue(0),
