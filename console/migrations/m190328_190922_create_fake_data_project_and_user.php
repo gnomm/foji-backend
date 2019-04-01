@@ -12,11 +12,12 @@ class m190328_190922_create_fake_data_project_and_user extends Migration
      */
     public function safeUp()
     {
-        for ($i = 1; $i < 100; $i++) {
+        for ($i = 1; $i < 30; $i++) {
             $faker = \Faker\Factory::create('ru_RU');
             $user = new \common\models\User();
             $user->email = $faker->email;
             $user->password = $faker->password;
+            $user->auth_key = $faker->password(32);
             if ($user->save()) {
                 $project = new \common\models\Project();
                 $project->name = $faker->text(20);
