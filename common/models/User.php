@@ -2,8 +2,10 @@
 
 namespace common\models;
 
+use lhs\Yii2SaveRelationsBehavior\SaveRelationsBehavior;
 use Yii;
 use yii\base\NotSupportedException;
+use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
 
@@ -24,7 +26,6 @@ use yii\web\IdentityInterface;
  * @property ProjectCalendar[] $projectCalendars
  * @property ProjectFeedback[] $projectFeedbacks
  * @property UserProfile[] $userProfile
- * @property UserToken[] $userTokens
  */
 class User extends ActiveRecord implements IdentityInterface
 {
@@ -38,6 +39,18 @@ class User extends ActiveRecord implements IdentityInterface
     public static function tableName()
     {
         return 'user';
+    }
+
+    public function behaviors()
+    {
+        return [
+            'saveRelations' => [
+                'class' => SaveRelationsBehavior::className(),
+                'relations' => [
+                    'userProfile',
+                ],
+            ],
+        ];
     }
 
     /**
@@ -195,6 +208,13 @@ class User extends ActiveRecord implements IdentityInterface
     public function removePasswordResetToken()
     {
         $this->password_reset_token = null;
+    }
+
+    public function transactions()
+    {
+        return [
+            self::SCENARIO_DEFAULT => self::OP_ALL,
+        ];
     }
 
     /**

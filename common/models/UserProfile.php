@@ -3,12 +3,13 @@
 namespace common\models;
 
 use Yii;
+use yii\behaviors\TimestampBehavior;
 
 /**
  * This is the model class for table "user_profile".
  *
  * @property int $id
- * @property string $name
+ * @property string $firstName
  * @property string $lastName
  * @property string $city
  * @property string $phone
@@ -33,17 +34,24 @@ class UserProfile extends \yii\db\ActiveRecord
         return 'user_profile';
     }
 
+    public function behaviors()
+    {
+        return [
+            TimestampBehavior::className(),
+        ];
+    }
+
     /**
      * {@inheritdoc}
      */
     public function rules()
     {
         return [
-            [['phone_status', 'sex', 'created_at', 'updated_at', 'user_id'], 'integer'],
+            [['phone_status', 'sex', 'created_at', 'updated_at'], 'integer'],
             [['birthday'], 'safe'],
             [['info'], 'string'],
-            [['created_at', 'updated_at', 'user_id'], 'required'],
-            [['name', 'lastName', 'city', 'phone'], 'string', 'max' => 20],
+            [['created_at', 'updated_at'], 'safe'],
+            [['firstName', 'lastName', 'city', 'phone'], 'string', 'max' => 20],
             [['avatar_url'], 'string', 'max' => 255],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
@@ -56,7 +64,7 @@ class UserProfile extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
+            'firstName' => 'firstName',
             'lastName' => 'lastName',
             'city' => 'City',
             'phone' => 'Phone',

@@ -38,7 +38,7 @@ class SiteController extends Controller
 
         return [
             'id' => $_user['id'],
-            'name' => $userProfile['name'],
+            'firstName' => $userProfile['firstName'],
             'lastName' => $userProfile['lastName'],
             'city' => $userProfile['city'],
             'avatar_url' => $userProfile['avatar_url'],

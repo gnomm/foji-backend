@@ -18,17 +18,17 @@ class m190328_190922_create_fake_data_project_and_user extends Migration
             $user->email = $faker->email;
             $user->password = $faker->password;
             $user->auth_key = $faker->password(32);
+
+            $userProfile = new \common\models\UserProfile();
+            //$userProfile->user_id = $user->id;
+            $userProfile->firstName = $faker->firstName;
+            $userProfile->lastName = $faker->lastName;
+            $userProfile->city = $faker->city;
+            $userProfile->phone = $faker->phoneNumber;
+            $userProfile->avatar_url = $faker->imageUrl(100);
+            $user->userProfile = $userProfile;
+
             if ($user->save()) {
-                $userProfile = new \common\models\UserProfile();
-                $userProfile->user_id = $user->id;
-                $userProfile->name = $faker->firstName;
-                $userProfile->lastName = $faker->lastName;
-                $userProfile->city = $faker->city;
-                $userProfile->phone = $faker->phoneNumber;
-                $userProfile->avatar_url = $faker->imageUrl(100);
-                $userProfile->updated_at = $faker->randomNumber(5);
-                $userProfile->phone = $faker->phoneNumber;
-                $userProfile->phone = $faker->phoneNumber;
 
                 $project = new \common\models\Project();
                 $project->name = $faker->text(20);
@@ -36,8 +36,8 @@ class m190328_190922_create_fake_data_project_and_user extends Migration
                 $project->short_info = $faker->text(30);
                 $project->location = $faker->streetAddress;
                 $project->how_to_get = $faker->text(20);
-                $project->date_start = $faker->date('Y-m-d');
-                $project->date_end = $faker->date('Y-m-d');
+                $project->date_start = $faker->date('Y-m-d', '2030');
+                $project->date_end = $faker->date('Y-m-d', '2035');
                 $project->time_start = $faker->time('H:m');
                 $project->time_end = $faker->time('H:m');
                 $project->duration = $faker->randomNumber(1);
