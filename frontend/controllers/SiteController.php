@@ -27,9 +27,10 @@ class SiteController extends Controller
 //        return Yii::$app->user->identity;
         if (Yii::$app->user->isGuest)
         {
-            $_user = 'guest';
+            $_user['identity'] = 'guest';
         }else {
             $_user = Yii::$app->user->identity;
+            $_user['identity'] = 'logged';
             $userProfile = UserProfile::findOne(['user_id' => $_user['id']]);
 
         }
@@ -37,6 +38,7 @@ class SiteController extends Controller
         $projects = Project::find()->immediate(6);
 
         return [
+            'identity' => $_user['identity'],
             'id' => $_user['id'],
             'firstName' => $userProfile['firstName'],
             'lastName' => $userProfile['lastName'],
