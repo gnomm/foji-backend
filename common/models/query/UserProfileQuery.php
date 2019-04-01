@@ -1,11 +1,11 @@
 <?php
 
-namespace frontend\models\query;
+namespace common\models\query;
 
 /**
- * This is the ActiveQuery class for [[\frontend\models\UserProfile]].
+ * This is the ActiveQuery class for [[\common\models\UserProfile]].
  *
- * @see \frontend\models\UserProfile
+ * @see \common\models\UserProfile
  */
 class UserProfileQuery extends \yii\db\ActiveQuery
 {
@@ -16,7 +16,7 @@ class UserProfileQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\UserProfile[]|array
+     * @return \common\models\UserProfile[]|array
      */
     public function all($db = null)
     {
@@ -25,7 +25,7 @@ class UserProfileQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\UserProfile|array|null
+     * @return \common\models\UserProfile|array|null
      */
     public function one($db = null)
     {

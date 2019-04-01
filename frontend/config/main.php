@@ -13,11 +13,14 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
+            'enableCsrfValidation' => false,
+            'csrfParam' => '_csrf-frontend',
             'parsers' => [
                 'application/json' => 'yii\web\JsonParser',
             ]
         ],
         'response' => [
+           // 'format' => 'json',
             'formatters' => [
                 \yii\web\Response::FORMAT_JSON => [
                     'class' => 'yii\web\JsonResponseFormatter',
@@ -28,8 +31,12 @@ return [
         ],
         'user' => [
             'identityClass' => 'common\models\User',
-            'enableAutoLogin' => false,
-            'enableSession' => false,
+            'enableAutoLogin' => true,
+            'identityCookie' => ['name' => '_identity', 'httpOnly' => true],
+        ],
+        'session' => [
+            // this is the name of the session cookie used for login on the frontend
+            'name' => 'foji',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -47,8 +54,10 @@ return [
             'showScriptName' => false,
             'rules' => [
                 ['class' => 'yii\rest\UrlRule', 'controller' => 'project'],
-                'signup' => 'site/signup',
-                'login' => 'site/login',
+//                'signup' => 'site/signup',
+//                'login' => 'site/login',
+//                'logout' => 'site/logout',
+                '<action:\w+>' => 'site/<action>'
             ],
         ]
     ],

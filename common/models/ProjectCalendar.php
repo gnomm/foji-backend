@@ -1,25 +1,25 @@
 <?php
 
-namespace frontend\models;
+namespace common\models;
 
 use Yii;
+use yii\behaviors\TimestampBehavior;
 
 /**
  * This is the model class for table "project_calendar".
  *
  * @property int $id
- * @property string $name
- * @property string $phone
- * @property string $customer_comment
+ * @property string $date_time
+ * @property int $model_id
+ * @property string $model_comment
  * @property string $organizer_comment
  * @property string $status
  * @property int $created_at
  * @property int $updated_at
  * @property int $project_id
- * @property int $project_user_id
  *
  * @property Project $project
- * @property Project $projectUser
+ * @property User $model
  */
 class ProjectCalendar extends \yii\db\ActiveRecord
 {
@@ -31,19 +31,26 @@ class ProjectCalendar extends \yii\db\ActiveRecord
         return 'project_calendar';
     }
 
+    public function behaviors()
+    {
+        return [
+            TimestampBehavior::className(),
+        ];
+    }
+
     /**
      * {@inheritdoc}
      */
     public function rules()
     {
         return [
+            [['date_time'], 'safe'],
+            [['model_id', 'project_id'], 'required'],
+            [['model_id', 'created_at', 'updated_at', 'project_id'], 'integer'],
             [['status'], 'string'],
-            [['created_at', 'updated_at', 'project_id', 'project_user_id'], 'integer'],
-            [['project_id', 'project_user_id'], 'required'],
-            [['name', 'customer_comment', 'organizer_comment'], 'string', 'max' => 255],
-            [['phone'], 'string', 'max' => 20],
+            [['model_comment', 'organizer_comment'], 'string', 'max' => 255],
             [['project_id'], 'exist', 'skipOnError' => true, 'targetClass' => Project::className(), 'targetAttribute' => ['project_id' => 'id']],
-            [['project_user_id'], 'exist', 'skipOnError' => true, 'targetClass' => Project::className(), 'targetAttribute' => ['project_user_id' => 'user_id']],
+            [['model_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['model_id' => 'id']],
         ];
     }
 
@@ -54,15 +61,14 @@ class ProjectCalendar extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'phone' => 'Phone',
-            'customer_comment' => 'Customer Comment',
+            'date_time' => 'Date Time',
+            'model_id' => 'Model ID',
+            'model_comment' => 'Model Comment',
             'organizer_comment' => 'Organizer Comment',
             'status' => 'Status',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'project_id' => 'Project ID',
-            'project_user_id' => 'Project User ID',
         ];
     }
 
@@ -77,17 +83,17 @@ class ProjectCalendar extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getProjectUser()
+    public function getModel()
     {
-        return $this->hasOne(Project::className(), ['user_id' => 'project_user_id']);
+        return $this->hasOne(User::className(), ['id' => 'model_id']);
     }
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\query\ProjectCalendarQuery the active query used by this AR class.
+     * @return \common\models\query\ProjectCalendarQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new \frontend\models\query\ProjectCalendarQuery(get_called_class());
+        return new \common\models\query\ProjectCalendarQuery(get_called_class());
     }
 }

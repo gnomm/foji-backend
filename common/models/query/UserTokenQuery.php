@@ -1,13 +1,13 @@
 <?php
 
-namespace frontend\models\query;
+namespace common\models\query;
 
 /**
- * This is the ActiveQuery class for [[\frontend\models\User]].
+ * This is the ActiveQuery class for [[\common\models\UserToken]].
  *
- * @see \frontend\models\User
+ * @see \common\models\UserToken
  */
-class UserQuery extends \yii\db\ActiveQuery
+class UserTokenQuery extends \yii\db\ActiveQuery
 {
     /*public function active()
     {
@@ -16,7 +16,7 @@ class UserQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\User[]|array
+     * @return \common\models\UserToken[]|array
      */
     public function all($db = null)
     {
@@ -25,7 +25,7 @@ class UserQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\User|array|null
+     * @return \common\models\UserToken|array|null
      */
     public function one($db = null)
     {

@@ -1,13 +1,13 @@
 <?php
 
-namespace frontend\models\query;
+namespace common\models\query;
 
 /**
- * This is the ActiveQuery class for [[\frontend\models\Project]].
+ * This is the ActiveQuery class for [[\common\models\Photographer]].
  *
- * @see \frontend\models\Project
+ * @see \common\models\Photographer
  */
-class ProjectQuery extends \yii\db\ActiveQuery
+class PhotographerQuery extends \yii\db\ActiveQuery
 {
     /*public function active()
     {
@@ -16,7 +16,7 @@ class ProjectQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\Project[]|array
+     * @return \common\models\Photographer[]|array
      */
     public function all($db = null)
     {
@@ -25,7 +25,7 @@ class ProjectQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\Project|array|null
+     * @return \common\models\Photographer|array|null
      */
     public function one($db = null)
     {

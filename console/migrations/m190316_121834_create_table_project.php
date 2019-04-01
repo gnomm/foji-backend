@@ -14,7 +14,6 @@ class m190316_121834_create_table_project extends Migration
     {
         $tableOptions = null;
         if ($this->db->driverName === 'mysql') {
-            // http://stackoverflow.com/questions/766809/whats-the-difference-between-utf8-general-ci-and-utf8-unicode-ci
             $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
         }
 
@@ -39,8 +38,7 @@ class m190316_121834_create_table_project extends Migration
             'price' => $this->smallInteger()->notNull(),
             'payment_method' => $this->string(),
             'info' => $this->text(),
-            'photographer_name' => $this->string(),
-            'photographer_info' => $this->text(),
+            'photographer_id' => $this->integer(),
             'views' => $this->integer(),
             'status' => 'ENUM("moderation", "correction", "published", "finished")NOT NULL DEFAULT "moderation"',
             'created_at' => $this->integer(),
@@ -61,7 +59,7 @@ class m190316_121834_create_table_project extends Migration
             'user',
             'id',
             'CASCADE',
-            'RESTRICT'
+            'CASCADE'
         );
     }
     /**
@@ -69,6 +67,8 @@ class m190316_121834_create_table_project extends Migration
      */
     public function safeDown()
     {
+        $this->dropForeignKey('fk-user-id__project-usr_id', 'project');
+        $this->dropIndex('idx-user-id__project-usr_id', 'project');
         $this->dropTable('project');
 
         return true;

@@ -12,7 +12,6 @@ class m190316_121809_create_table_user extends Migration
     {
         $tableOptions = null;
         if ($this->db->driverName === 'mysql') {
-            // http://stackoverflow.com/questions/766809/whats-the-difference-between-utf8-general-ci-and-utf8-unicode-ci
             $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
         }
 
@@ -21,7 +20,9 @@ class m190316_121809_create_table_user extends Migration
             'email' => $this->string(30)->notNull()->unique(),
             'role' => 'ENUM("admin", "model", "organizer", "photographer") NOT NULL DEFAULT "model"',
             'status' => $this->tinyInteger()->defaultValue(1),
-            'password' => $this->string()->notNull(),
+            'auth_key' => $this->string(32)->notNull(),
+            'password_hash' => $this->string()->notNull(),
+            'password_reset_token' => $this->string()->unique(),
         ], $tableOptions);
     }
 

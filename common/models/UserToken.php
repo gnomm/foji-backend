@@ -1,8 +1,7 @@
 <?php
 
-namespace frontend\models;
+namespace common\models;
 
-use frontend\models\query\UserTokenQuery;
 use Yii;
 
 /**
@@ -13,7 +12,7 @@ use Yii;
  * @property string $token
  * @property int $expired_at
  *
- * @property Users $user
+ * @property User $user
  */
 class UserToken extends \yii\db\ActiveRecord
 {
@@ -31,18 +30,12 @@ class UserToken extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['token', 'expired_at'], 'required'],
+            [['user_id', 'token', 'expired_at'], 'required'],
             [['user_id', 'expired_at'], 'integer'],
             [['token'], 'string', 'max' => 255],
             [['token'], 'unique'],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
-    }
-
-    public function generateToken($expire)
-    {
-        $this->expired_at = $expire;
-        $this->token = \Yii::$app->security->generateRandomString();
     }
 
     /**
@@ -68,10 +61,10 @@ class UserToken extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\query\UserTokenQuery the active query used by this AR class.
+     * @return \common\models\query\UserTokenQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new UserTokenQuery(get_called_class());
+        return new \common\models\query\UserTokenQuery(get_called_class());
     }
 }

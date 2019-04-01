@@ -1,13 +1,13 @@
 <?php
 
-namespace frontend\models\query;
+namespace common\models\query;
 
 /**
- * This is the ActiveQuery class for [[\frontend\models\ProjectFeedback]].
+ * This is the ActiveQuery class for [[\common\models\ProjectCalendar]].
  *
- * @see \frontend\models\ProjectFeedback
+ * @see \common\models\ProjectCalendar
  */
-class ProjectFeedbackQuery extends \yii\db\ActiveQuery
+class ProjectCalendarQuery extends \yii\db\ActiveQuery
 {
     /*public function active()
     {
@@ -16,7 +16,7 @@ class ProjectFeedbackQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\ProjectFeedback[]|array
+     * @return \common\models\ProjectCalendar[]|array
      */
     public function all($db = null)
     {
@@ -25,7 +25,7 @@ class ProjectFeedbackQuery extends \yii\db\ActiveQuery
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\ProjectFeedback|array|null
+     * @return \common\models\ProjectCalendar|array|null
      */
     public function one($db = null)
     {

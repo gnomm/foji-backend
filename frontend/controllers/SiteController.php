@@ -6,6 +6,8 @@ use Yii;
 use yii\rest\Controller;
 use frontend\models\LoginForm;
 use frontend\models\SignupForm;
+use yii\web\Request;
+use yii\web\Response;
 
 /**
  * Site controller
@@ -32,12 +34,8 @@ class SiteController extends Controller
     public function actionLogin()
     {
         $model = new Loginform();
-        $model->load(Yii::$app->request->bodyParams, '');
-        if ($token = $model->login()) {
-            return [
-                'token' => $token->token,
-                'expired' => date(DATE_RFC3339, $token->expired_at),
-            ];
+        if ($model->load(Yii::$app->request->bodyParams, '') && $model->login()) {
+            return true;
         } else {
             return $model->getErrors();
         }
@@ -52,7 +50,7 @@ class SiteController extends Controller
     {
         Yii::$app->user->logout();
 
-        return $this->goHome();
+        return 'ok';
     }
 
     /**
@@ -63,12 +61,9 @@ class SiteController extends Controller
     public function actionSignup()
     {
         $model = new SignupForm();
-        $model->load(Yii::$app->request->bodyParams, '');
-        if ($model->signup()) {
-            return [
-                'token' => $token->token,
-                'expired' => date(DATE_RFC3339, $token->expired_at),
-            ];
+        if ( $model->load(Yii::$app->request->bodyParams, '') && $model->signup()) {
+            return Yii::$app->session;
+                //['success'];
         } else {
             return $model->getErrors();
         }

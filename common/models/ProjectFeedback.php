@@ -1,6 +1,6 @@
 <?php
 
-namespace frontend\models;
+namespace common\models;
 
 use Yii;
 
@@ -75,10 +75,10 @@ class ProjectFeedback extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\query\ProjectFeedbackQuery the active query used by this AR class.
+     * @return \common\models\query\ProjectFeedbackQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new \frontend\models\query\ProjectFeedbackQuery(get_called_class());
+        return new \common\models\query\ProjectFeedbackQuery(get_called_class());
     }
 }

@@ -40,7 +40,7 @@ class LoginForm extends Model
         if (!$this->hasErrors()) {
             $user = $this->getUser();
             if (!$user || !$user->validatePassword($this->password)) {
-                $this->addError($attribute, 'Incorrect username or password.');
+                $this->addError($attribute, 'Incorrect email or password.');
             }
         }
     }
@@ -53,23 +53,20 @@ class LoginForm extends Model
     public function login()
     {
         if ($this->validate()) {
-            $token = new UserToken();
-            $token->user_id = $this->getUser()->id;
-            $token->generateToken(time() + 3600 * 24);
-            return $token->save() ? $token : null;
+            return Yii::$app->user->login($this->getUser(), 3600 * 24 * 7);
         }else
-            return null;
+            return false;
     }
 
     /**
-     * Finds user by [[username]]
+     * Finds user by [[email]]
      *
      * @return User|null
      */
     protected function getUser()
     {
         if ($this->_user === null) {
-            $this->_user = User::findByEmail($this->email);
+            $this->_user = \common\models\User::findByEmail($this->email);
         }
 
         return $this->_user;

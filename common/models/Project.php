@@ -1,12 +1,12 @@
 <?php
 
-namespace frontend\models;
+namespace common\models;
 
-use frontend\models\query\ProjectQuery;
 use Yii;
+use yii\behaviors\TimestampBehavior;
 
 /**
- * This is the model class for table "projects".
+ * This is the model class for table "project".
  *
  * @property int $id
  * @property string $name
@@ -28,18 +28,17 @@ use Yii;
  * @property int $price
  * @property string $payment_method
  * @property string $info
- * @property string $photographer_name
- * @property string $photographer_info
+ * @property int $photographer_id
  * @property int $views
  * @property string $status
  * @property int $created_at
  * @property int $updated_at
  * @property int $user_id
  *
+ * @property Photographer $photographer
  * @property User $user
- * @property ProjectCalendar[] $projectsCalendars
- * @property ProjectCalendar[] $projectsCalendars0
- * @property ProjectFeedback[] $projectsFeedbacks
+ * @property ProjectCalendar[] $projectCalendars
+ * @property ProjectFeedback[] $projectFeedbacks
  */
 class Project extends \yii\db\ActiveRecord
 {
@@ -51,17 +50,25 @@ class Project extends \yii\db\ActiveRecord
         return 'project';
     }
 
+    public function behaviors()
+    {
+        return [
+            TimestampBehavior::className(),
+        ];
+    }
+
     /**
      * {@inheritdoc}
      */
     public function rules()
     {
         return [
-            [['name', 'theme', 'location', 'date_start', 'date_end', 'time_start', 'time_end', 'duration', 'qty_photos', 'price'], 'required'],
+            [['name', 'theme', 'location', 'date_start', 'date_end', 'time_start', 'time_end', 'duration', 'qty_photos', 'price', 'user_id'], 'required'],
             [['date_start', 'date_end', 'time_start', 'time_end'], 'safe'],
-            [['duration', 'qty_photos', 'makeup', 'hairstyle', 'costume', 'prepayment', 'price', 'views', 'created_at', 'updated_at', 'user_id'], 'integer'],
-            [['info', 'photographer_info', 'status'], 'string'],
-            [['name', 'theme', 'short_info', 'location', 'how_to_get', 'path_images', 'payment_method', 'photographer_name'], 'string', 'max' => 255],
+            [['duration', 'qty_photos', 'makeup', 'hairstyle', 'costume', 'prepayment', 'price', 'photographer_id', 'views', 'created_at', 'updated_at', 'user_id'], 'integer'],
+            [['info', 'status'], 'string'],
+            [['name', 'theme', 'short_info', 'location', 'how_to_get', 'path_images', 'payment_method'], 'string', 'max' => 255],
+            [['photographer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Photographer::className(), 'targetAttribute' => ['photographer_id' => 'id']],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
@@ -92,14 +99,21 @@ class Project extends \yii\db\ActiveRecord
             'price' => 'Price',
             'payment_method' => 'Payment Method',
             'info' => 'Info',
-            'photographer_name' => 'Photographer Name',
-            'photographer_info' => 'Photographer Info',
+            'photographer_id' => 'Photographer ID',
             'views' => 'Views',
             'status' => 'Status',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'user_id' => 'User ID',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPhotographer()
+    {
+        return $this->hasOne(Photographer::className(), ['id' => 'photographer_id']);
     }
 
     /**
@@ -115,16 +129,9 @@ class Project extends \yii\db\ActiveRecord
      */
     public function getProjectCalendars()
     {
-        return $this->hasMany(ProjectCalendar::className(), ['project_user_id' => 'user_id']);
+        return $this->hasMany(ProjectCalendar::className(), ['project_id' => 'id']);
     }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getProjectCalendars0()
-    {
-        return $this->hasMany(ProjectsCalendar::className(), ['project_id' => 'id']);
-    }
 
     /**
      * @return \yii\db\ActiveQuery
@@ -136,10 +143,10 @@ class Project extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\query\ProjectQuery the active query used by this AR class.
+     * @return \common\models\query\ProjectQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new ProjectQuery(get_called_class());
+        return new \common\models\query\ProjectQuery(get_called_class());
     }
 }

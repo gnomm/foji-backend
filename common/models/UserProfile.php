@@ -1,9 +1,8 @@
 <?php
 
-namespace frontend\models;
+namespace common\models;
 
-use frontend\models\query\UserProfileQuery;
-use yii\behaviors\TimestampBehavior;
+use Yii;
 
 /**
  * This is the model class for table "user_profile".
@@ -11,11 +10,13 @@ use yii\behaviors\TimestampBehavior;
  * @property int $id
  * @property string $name
  * @property string $surname
+ * @property string $city
  * @property string $phone
  * @property int $phone_status
  * @property string $birthday
  * @property string $info
  * @property int $sex
+ * @property string $avatar_url
  * @property int $created_at
  * @property int $updated_at
  * @property int $user_id
@@ -32,13 +33,6 @@ class UserProfile extends \yii\db\ActiveRecord
         return 'user_profile';
     }
 
-    public function behaviors()
-    {
-        return [
-            TimestampBehavior::className(),
-        ];
-    }
-
     /**
      * {@inheritdoc}
      */
@@ -48,8 +42,9 @@ class UserProfile extends \yii\db\ActiveRecord
             [['phone_status', 'sex', 'created_at', 'updated_at', 'user_id'], 'integer'],
             [['birthday'], 'safe'],
             [['info'], 'string'],
-            [['created_at', 'updated_at'], 'required'],
-            [['name', 'surname', 'phone'], 'string', 'max' => 20],
+            [['created_at', 'updated_at', 'user_id'], 'required'],
+            [['name', 'surname', 'city', 'phone'], 'string', 'max' => 20],
+            [['avatar_url'], 'string', 'max' => 255],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
@@ -63,11 +58,13 @@ class UserProfile extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Name',
             'surname' => 'Surname',
+            'city' => 'City',
             'phone' => 'Phone',
             'phone_status' => 'Phone Status',
             'birthday' => 'Birthday',
             'info' => 'Info',
             'sex' => 'Sex',
+            'avatar_url' => 'Avatar Url',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
             'user_id' => 'User ID',
@@ -84,10 +81,10 @@ class UserProfile extends \yii\db\ActiveRecord
 
     /**
      * {@inheritdoc}
-     * @return \frontend\models\query\UserProfileQuery the active query used by this AR class.
+     * @return \common\models\query\UserProfileQuery the active query used by this AR class.
      */
     public static function find()
     {
-        return new UserProfileQuery(get_called_class());
+        return new \common\models\query\UserProfileQuery(get_called_class());
     }
 }
