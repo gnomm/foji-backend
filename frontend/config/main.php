@@ -57,7 +57,7 @@ return [
 //                'signup' => 'site/signup',
 //                'login' => 'site/login',
 //                'logout' => 'site/logout',
-                '<action:\w+>' => 'site/<action>'
+                '<action:\w+-?\w+>' => 'site/<action>'
             ],
         ]
     ],

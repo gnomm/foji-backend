@@ -47,7 +47,7 @@ class UserProfile extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['phone_status', 'sex', 'created_at', 'updated_at'], 'integer'],
+            [['phone_status', 'sex'], 'integer'],
             [['birthday'], 'safe'],
             [['info'], 'string'],
             [['created_at', 'updated_at'], 'safe'],
