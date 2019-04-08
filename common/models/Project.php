@@ -4,6 +4,7 @@ namespace common\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "project".
@@ -24,6 +25,8 @@ use yii\behaviors\TimestampBehavior;
  * @property int $makeup
  * @property int $hairstyle
  * @property int $costume
+ * @property int $accessories
+ * @property int $studio
  * @property int $prepayment
  * @property int $price
  * @property string $payment_method
@@ -40,7 +43,7 @@ use yii\behaviors\TimestampBehavior;
  * @property ProjectCalendar[] $projectCalendars
  * @property ProjectFeedback[] $projectFeedbacks
  */
-class Project extends \yii\db\ActiveRecord
+class Project extends ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -63,9 +66,9 @@ class Project extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'theme', 'location', 'date_start', 'date_end', 'time_start', 'time_end', 'duration', 'qty_photos', 'price', 'user_id'], 'required'],
+            [['name', 'theme', 'location', 'date_start', 'date_end', 'time_start', 'time_end', 'duration', 'qty_photos', 'price'], 'required'],
             [['date_start', 'date_end', 'time_start', 'time_end'], 'safe'],
-            [['duration', 'qty_photos', 'makeup', 'hairstyle', 'costume', 'prepayment', 'price', 'photographer_id', 'views', 'created_at', 'updated_at', 'user_id'], 'integer'],
+            [['duration', 'qty_photos', 'makeup', 'hairstyle', 'costume', 'accessories', 'studio', 'prepayment', 'price', ], 'integer'],
             [['info', 'status'], 'string'],
             [['name', 'theme', 'short_info', 'location', 'how_to_get', 'path_images', 'payment_method'], 'string', 'max' => 255],
             [['photographer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Photographer::className(), 'targetAttribute' => ['photographer_id' => 'id']],
