@@ -2,10 +2,9 @@
 namespace frontend\controllers;
 
 
-use common\models\Project;
 use common\models\UserProfile;
 use Yii;
-use yii\data\ActiveDataProvider;
+use yii\filters\Cors;
 use yii\rest\Controller;
 use frontend\models\LoginForm;
 use frontend\models\SignupForm;
@@ -15,11 +14,24 @@ use frontend\models\SignupForm;
  */
 class SiteController extends Controller
 {
-    /**
-     * Displays homepage.
-     *
-     * @return mixed
-     */
+
+    // Кросс-доменные запросы  УДАЛИТЬ НА ПРОДАКШЕНЕ!
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
+
+        $behaviors['corsFilter'] = [
+            'class' => Cors::className(),
+            'cors' => [
+                'Origin' => ['*'],
+                'Access-Control-Request-Method' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
+                'Access-Control-Request-Headers' => ['*'],
+            ],
+        ];
+
+        return $behaviors;
+    }
+
     public function actionUserIdentity()
     {
         if ($_user = Yii::$app->user->identity) {

@@ -12,6 +12,7 @@ class ProjectController extends ActiveController
 {
     public $modelClass = 'common\models\Project';
 
+    // Кросс-доменные запросы  УДАЛИТЬ НА ПРОДАКШЕНЕ!
     public function behaviors()
     {
         $behaviors = parent::behaviors();
