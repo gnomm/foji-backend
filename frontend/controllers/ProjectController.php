@@ -43,6 +43,6 @@ class ProjectController extends ActiveController
     public function prepareDataProvider()
     {
         $searchModel = new ProjectFilter();
-        return $searchModel->search(\Yii::$app->request->queryParams);
+        return $searchModel->filter(\Yii::$app->request->queryParams);
     }
 }

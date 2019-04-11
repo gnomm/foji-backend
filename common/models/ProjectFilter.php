@@ -28,7 +28,7 @@ class ProjectFilter extends Project
      * @param array $params
      * @return ActiveDataProvider
      */
-    public function search($params)
+    public function filter($params)
     {
         $query = Project::find();
 
