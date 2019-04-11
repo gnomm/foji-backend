@@ -68,13 +68,39 @@ class Project extends ActiveRecord
         return [
             [['name', 'theme', 'location', 'date_start', 'date_end', 'time_start', 'time_end', 'duration', 'qty_photos', 'price'], 'required'],
             [['date_start', 'date_end', 'time_start', 'time_end'], 'safe'],
-            [['duration', 'qty_photos', 'makeup', 'hairstyle', 'costume', 'accessories', 'studio', 'prepayment', 'price', ], 'integer'],
+            [['duration', 'qty_photos', 'makeup', 'hairstyle', 'costume', 'accessories', 'studio', 'prepayment', 'price'], 'integer'],
             [['info', 'status'], 'string'],
             [['name', 'theme', 'short_info', 'location', 'how_to_get', 'path_images', 'payment_method'], 'string', 'max' => 255],
             [['photographer_id'], 'exist', 'skipOnError' => true, 'targetClass' => Photographer::className(), 'targetAttribute' => ['photographer_id' => 'id']],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
+
+//    public function fields()
+//    {
+//        return [
+//            'id',
+//            'name',
+//            'theme',
+//            'short_info',
+//            'location',
+//            'how_to_get',
+//            'date_start',
+//            'date_end',
+//            'time_start',
+//            'time_end',
+//            'duration',
+//            'qty_photos',
+//            'path_images',
+//            'makeup',
+//            'hairstyle',
+//            'costume',
+//            'prepayment',
+//            'payment_method',
+//            'info',
+//            'price',
+//        ];
+//    }
 
     /**
      * {@inheritdoc}

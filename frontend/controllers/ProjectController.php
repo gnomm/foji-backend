@@ -2,9 +2,7 @@
 
 namespace frontend\controllers;
 
-
-use common\models\Project;
-use yii\data\ActiveDataProvider;
+use common\models\ProjectFilter;
 use yii\filters\Cors;
 use yii\rest\ActiveController;
 
@@ -44,19 +42,7 @@ class ProjectController extends ActiveController
 
     public function prepareDataProvider()
     {
-         $query = Project::find();
-         $dataProvider = new ActiveDataProvider([
-              'query' => $query,
-              'pagination' => [
-                 'pageSize' => 8,
-              ],
-              'sort' => [
-                  'defaultOrder' => [
-                     'date_start' => SORT_ASC,
-                  ]
-              ],
-         ]);
-        $query->immediate(1000);
-        return $dataProvider;
+        $searchModel = new ProjectFilter();
+        return $searchModel->search(\Yii::$app->request->queryParams);
     }
 }
