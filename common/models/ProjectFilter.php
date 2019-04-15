@@ -62,7 +62,7 @@ class ProjectFilter extends Project
             ]);
 
             if ($this->oneDate) {
-                $query->andWhere(['BETWEEN', $this->oneDate, 'date_start', 'date_end']);
+                $query->andWhere("STR_TO_DATE('$this->oneDate', '%Y-%m-%d') BETWEEN date_start AND date_end");
             } elseif ($this->minDate && $this->maxDate) {
             $query->andWhere(['>=', 'date_end', $this->minDate])
                 ->andWhere(['<=', 'date_start', $this->maxDate]);
