@@ -9,6 +9,8 @@ use yii\data\ActiveDataProvider;
 
 class ProjectFilter extends Project
 {
+     const LIMIT_PROJECTS = 500;
+
     public $minDate;
     public $maxDate;
     public $oneDate;
@@ -83,7 +85,7 @@ class ProjectFilter extends Project
             return $dataProvider;
         }
 
-        $query->immediate(500);
+        $query->immediate(self::LIMIT_PROJECTS);
 
         return $dataProvider;
     }
