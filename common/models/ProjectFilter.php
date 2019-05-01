@@ -67,12 +67,13 @@ class ProjectFilter extends Project
             $query->andWhere(['>=', 'date_end', $this->minDate])
                 ->andWhere(['<=', 'date_start', $this->maxDate]);
             }
+//            TODO если showFinished и не выбрано ни одной даты
 
             if ($this->maxPrice && !$this->minPrice) {
                 $query->andWhere(['<=', 'price', $this->maxPrice]);
-            } elseif ($this->minPrice && !$this->maxPrice) {
+            } elseif (!$this->maxPrice && $this->minPrice) {
                 $query->andWhere(['>=', 'price', $this->minPrice]);
-            } elseif ($this->minPrice && $this->maxPrice) {
+            } elseif ($this->maxPrice && $this->minPrice) {
                 $query->andWhere(['BETWEEN', 'price', $this->minPrice, $this->maxPrice]);
             }
 
@@ -82,16 +83,13 @@ class ProjectFilter extends Project
                 $query->andWhere(['status' => 'published']);
             }
 
+           // TODO разобраться надо ли добавить $query->immediate
+
             return $dataProvider;
         }
 
         $query->immediate(self::LIMIT_PROJECTS);
 
         return $dataProvider;
-    }
-
-    public function formName()
-    {
-        return 'f';
     }
 }

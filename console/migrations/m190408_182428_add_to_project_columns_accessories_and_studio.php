@@ -34,18 +34,4 @@ class m190408_182428_add_to_project_columns_accessories_and_studio extends Migra
         $this->dropColumn('project','studio');
     }
 
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m190408_182428_add_to_project_columns_accessories_and_studio cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }

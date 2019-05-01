@@ -12,11 +12,6 @@ class m190316_121834_create_table_project extends Migration
      */
     public function safeUp()
     {
-        $tableOptions = null;
-        if ($this->db->driverName === 'mysql') {
-            $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
-        }
-
         $this->createTable('project', [
             'id' => $this->primaryKey(),
             'name' => $this->string()->notNull(),
@@ -44,7 +39,7 @@ class m190316_121834_create_table_project extends Migration
             'created_at' => $this->integer(),
             'updated_at' => $this->integer(),
             'user_id' => $this->integer()->notNull()
-        ],$tableOptions);
+        ]);
 
         $this->createIndex(
             'idx-user-id__project-usr_id',
@@ -73,19 +68,4 @@ class m190316_121834_create_table_project extends Migration
 
         return true;
     }
-
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m190316_121834_create_table_project cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }

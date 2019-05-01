@@ -3,12 +3,14 @@
 namespace common\models\query;
 
 
+use yii\db\ActiveQuery;
+
 /**
  * This is the ActiveQuery class for [[\common\models\Project]].
  *
  * @see \common\models\Project
  */
-class ProjectQuery extends \yii\db\ActiveQuery
+class ProjectQuery extends ActiveQuery
 {
     public function immediate($limit)
     {

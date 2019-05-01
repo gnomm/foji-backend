@@ -12,11 +12,6 @@ class m190316_121901_create_table_feedback_project extends Migration
      */
     public function safeUp()
     {
-        $tableOptions = null;
-        if ($this->db->driverName === 'mysql') {
-            $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
-        }
-
         $this->createTable('project_feedback', [
             'id' => $this->primaryKey(),
             'rate' => $this->smallInteger()->notNull(),
@@ -24,7 +19,7 @@ class m190316_121901_create_table_feedback_project extends Migration
             'created_at' => $this->timestamp(),
             'project_id' => $this->integer()->notNull(),
             'user_id' => $this->integer(),
-        ],$tableOptions);
+        ]);
 
         $this->createIndex(
             'idx-project-id__project_feedback-project_id',
@@ -74,18 +69,4 @@ class m190316_121901_create_table_feedback_project extends Migration
         return true;
     }
 
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m190316_121901_create_table_feedbac_project cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }

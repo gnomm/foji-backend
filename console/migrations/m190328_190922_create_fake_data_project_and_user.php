@@ -69,18 +69,4 @@ class m190328_190922_create_fake_data_project_and_user extends Migration
         return false;
     }
 
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        "m190328_190922_create_fake_data_project_and_user cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }

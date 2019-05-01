@@ -10,11 +10,6 @@ class m190316_121809_create_table_user extends Migration
 
     public function safeUp()
     {
-        $tableOptions = null;
-        if ($this->db->driverName === 'mysql') {
-            $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
-        }
-
         $this->createTable('user', [
             'id' => $this->primaryKey(),
             'email' => $this->string(50)->notNull()->unique(),
@@ -23,7 +18,7 @@ class m190316_121809_create_table_user extends Migration
             'auth_key' => $this->string(32)->notNull(),
             'password_hash' => $this->string()->notNull(),
             'password_reset_token' => $this->string()->unique(),
-        ], $tableOptions);
+        ]);
     }
 
     /**
@@ -36,18 +31,4 @@ class m190316_121809_create_table_user extends Migration
         return true;
     }
 
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m190316_121809_create_table_user cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }

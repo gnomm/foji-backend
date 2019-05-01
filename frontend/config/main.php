@@ -13,26 +13,12 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
-            'enableCsrfValidation' => false,
             'csrfParam' => '_csrf-frontend',
-            'parsers' => [
-                'application/json' => 'yii\web\JsonParser',
-            ]
-        ],
-        'response' => [
-           // 'format' => 'json',
-            'formatters' => [
-                \yii\web\Response::FORMAT_JSON => [
-                    'class' => 'yii\web\JsonResponseFormatter',
-                    'prettyPrint' => YII_DEBUG, // используем "pretty" в режиме отладки
-                    'encodeOptions' => JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE,
-                ],
-            ],
         ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity', 'httpOnly' => true],
+            'identityCookie' => ['name' => '_identity-frontend', 'httpOnly' => true],
         ],
         'session' => [
             // this is the name of the session cookie used for login on the frontend
@@ -47,19 +33,18 @@ return [
                 ],
             ],
         ],
+        'errorHandler' => [
+            'errorAction' => 'site/error',
+        ],
 
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => 'project'],
-//                'signup' => 'site/signup',
-//                'login' => 'site/login',
-//                'logout' => 'site/logout',
                 '<action:\w+-?\w+>' => 'site/<action>'
             ],
-        ]
+        ],
+
     ],
     'params' => $params,
 ];
