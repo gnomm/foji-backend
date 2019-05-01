@@ -74,8 +74,11 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $model = new ProjectFilter();
-        $model->filter(Yii::$app->request->get());
-        return $this->render('index');
+        $dataProvider = $model->filter(Yii::$app->request->get());
+        return $this->render('index',[
+            'dataProvider' => $dataProvider,
+//            TODO обработать массив проектов во вьюхе index
+        ]);
     }
 
     /**

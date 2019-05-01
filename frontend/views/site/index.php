@@ -6,6 +6,12 @@ $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
+    <?php
+    echo \yii\grid\GridView::widget([
+        'dataProvider' => $dataProvider,
+    ]);
+    ?>
+
     <div class="jumbotron">
         <h1>Congratulations!</h1>
 

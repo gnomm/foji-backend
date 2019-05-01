@@ -6,10 +6,11 @@ namespace common\models;
 
 
 use yii\data\ActiveDataProvider;
+use yii\validators\Validator;
 
 class ProjectFilter extends Project
 {
-     const LIMIT_PROJECTS = 500;
+    const LIMIT_PROJECTS = 500;
 
     public $minDate;
     public $maxDate;
@@ -32,7 +33,7 @@ class ProjectFilter extends Project
      */
     public function filter($params)
     {
-        $query = Project::find();
+        $query = Project::find()->limit(self::LIMIT_PROJECTS);;
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -41,16 +42,12 @@ class ProjectFilter extends Project
               ],
               'sort' => [
                   'defaultOrder' => [
-                     'date_start' => SORT_ASC,
+                      'id' => SORT_ASC,
                   ]
               ],
         ]);
 
-        if ($this->load($params)) {
-
-            if (!$this->validate()) {
-                return $dataProvider;
-            }
+        if ($this->load($params) && $this->validate()) {
 
             $query->andFilterWhere([
                 'makeup' => $this->makeup,
@@ -63,33 +60,33 @@ class ProjectFilter extends Project
 
             if ($this->oneDate) {
                 $query->andWhere("STR_TO_DATE('$this->oneDate', '%Y-%m-%d') BETWEEN date_start AND date_end");
+
             } elseif ($this->minDate && $this->maxDate) {
-            $query->andWhere(['>=', 'date_end', $this->minDate])
-                ->andWhere(['<=', 'date_start', $this->maxDate]);
+                $query->andWhere(['>=', 'date_end', $this->minDate])
+                    ->andWhere(['<=', 'date_start', $this->maxDate]);
             }
-//            TODO если showFinished и не выбрано ни одной даты
 
             if ($this->maxPrice && !$this->minPrice) {
                 $query->andWhere(['<=', 'price', $this->maxPrice]);
+
             } elseif (!$this->maxPrice && $this->minPrice) {
                 $query->andWhere(['>=', 'price', $this->minPrice]);
+
             } elseif ($this->maxPrice && $this->minPrice) {
                 $query->andWhere(['BETWEEN', 'price', $this->minPrice, $this->maxPrice]);
             }
-
-            if ($this->showFinished) {
-                $query->andWhere(['OR', 'status', "'published'", "'finished'"]);
-            } else {
-                $query->andWhere(['status' => 'published']);
-            }
-
-           // TODO разобраться надо ли добавить $query->immediate
-
-            return $dataProvider;
         }
 
-        $query->immediate(self::LIMIT_PROJECTS);
+        $this->showFinished
+            ? $query->andWhere(['OR', 'status', "'published'", "'finished'"])
+            : $query->andWhere(['status' => 'published',]);
+
 
         return $dataProvider;
+    }
+
+    public function formName()
+    {
+        return '';
     }
 }
