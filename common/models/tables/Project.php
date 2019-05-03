@@ -1,7 +1,11 @@
 <?php
 
-namespace common\models;
+namespace common\models\tables;
 
+use common\models\Photographer;
+use common\models\ProjectCalendar;
+use common\models\ProjectFeedback;
+use common\models\User;
 use Yii;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
@@ -38,6 +42,7 @@ use yii\db\ActiveRecord;
  * @property int $updated_at
  * @property int $user_id
  *
+ * @property UploadPhoto[] $photos
  * @property Photographer $photographer
  * @property User $user
  * @property ProjectCalendar[] $projectCalendars
@@ -75,32 +80,6 @@ class Project extends ActiveRecord
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
-
-//    public function fields()
-//    {
-//        return [
-//            'id',
-//            'name',
-//            'theme',
-//            'short_info',
-//            'location',
-//            'how_to_get',
-//            'date_start',
-//            'date_end',
-//            'time_start',
-//            'time_end',
-//            'duration',
-//            'qty_photos',
-//            'path_images',
-//            'makeup',
-//            'hairstyle',
-//            'costume',
-//            'prepayment',
-//            'payment_method',
-//            'info',
-//            'price',
-//        ];
-//    }
 
     /**
      * {@inheritdoc}
@@ -140,6 +119,14 @@ class Project extends ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
+    public function getPhotos()
+    {
+        return $this->hasMany(UploadPhoto::className(), ['project_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
     public function getPhotographer()
     {
         return $this->hasOne(Photographer::className(), ['id' => 'photographer_id']);
@@ -160,7 +147,6 @@ class Project extends ActiveRecord
     {
         return $this->hasMany(ProjectCalendar::className(), ['project_id' => 'id']);
     }
-
 
     /**
      * @return \yii\db\ActiveQuery

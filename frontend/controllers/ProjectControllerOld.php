@@ -6,7 +6,7 @@ namespace frontend\controllers;
 
 use yii\web\Controller;
 
-class ProjectController extends Controller
+class ProjectControllerOld extends Controller
 {
 
 }
