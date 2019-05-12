@@ -128,4 +128,8 @@ document.onreadystatechange = () => {
     };
 };
 
-
+var ranged = new Datepicker('#datepicker', {
+    inline: true,
+    multiple: true,
+    weekStart: 1,
+});
