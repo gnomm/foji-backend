@@ -17,6 +17,15 @@ body, html {
     color: #000;
 }
 
+body.modal-open:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5); }
+
 h1 {
     font-size: 44px;
     color: #fff;
@@ -425,6 +434,7 @@ a {
     align-items: center;
     height: 100%;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .header .menu-auth-link.not-main-page {
@@ -1134,6 +1144,47 @@ a.datepicker__prev, a.datepicker__next{
         align-items: center;
     }
 }
+
+.modal-sign-in {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh; }
+.modal-sign-in .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+.modal-sign-in .modal-content {
+    width: 480px;
+    height: 480px;
+    padding: 25px;
+    background-color: #fff; }
+.modal-sign-in .modal-content-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-bottom: 5px; }
+.modal-sign-in .btn-modal-close {
+    cursor: pointer; }
+.modal-sign-in .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700; }
 
 @media (max-width: 1139px) {
     .container {
