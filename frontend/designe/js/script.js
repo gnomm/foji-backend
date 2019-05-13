@@ -64,6 +64,20 @@ document.querySelector('.btn-filter-projects-close').addEventListener('click', f
     document.querySelector('.filter-form').style.display = 'none';
 });
 
+document.querySelector('.sign-in').addEventListener('click', function () {
+    document.querySelector('.modal-sign-in').style.display = 'block';
+    document.querySelector('.modal-sign-in').style.top = window.pageYOffset + 'px';
+    document.querySelector('body').style.overflowY = 'hidden';
+    document.querySelector('body').classList.add('modal-open')
+});
+
+document.querySelector('.btn-modal-close').addEventListener('click', function () {
+    document.querySelector('.modal-sign-in').style.display = 'none';
+    document.querySelector('.modal-sign-in').style.top = '0';
+    document.querySelector('body').style.overflowY = 'auto';
+    document.querySelector('body').classList.remove('modal-open')
+});
+
 //Slider
 const slides = [
     './images/test-slider-images/32064b1aac54770337ec95ea346e2db2.jpg',
