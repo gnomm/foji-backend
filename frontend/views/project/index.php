@@ -1,3 +1,12 @@
-<main class="project" style="padding-top: 70px">
-    <?php print_r($project['price']) ?>
+<?php
+use yii\helpers\Html;
+?>
+
+<main class="project">
+    <div class="container">
+        <div class="breadcrumbs">
+            <?= Html::a('К фотопроектам', ['/']) ?>
+        </div>
+        <?php print_r($project['name']) ?>
+    </div>
 </main>
