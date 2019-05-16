@@ -3,8 +3,12 @@
 use yii\helpers\Html;
 use frontend\assets\AppAsset;
 use frontend\widgets\LoginFormWidget;
+use \frontend\widgets\UserDataWidget;
 
 AppAsset::register($this);
+
+/* @var $this yii\web\View */
+/* @var $content string */
 
 ?>
 
@@ -106,7 +110,7 @@ AppAsset::register($this);
                         </nav>
                     <?php endif; ?>
                     <?php if (!Yii::$app->user->isGuest): ?>
-                        <p>ID пользователя: </p><?= Yii::$app->user->id ?>
+                        <p>Пользователь: </p><?= UserDataWidget::widget() ?>
                         <?= Html::a(
                             'Выход',
                             ['site/logout'],
