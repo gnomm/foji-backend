@@ -79,7 +79,6 @@ class SiteController extends Controller
         $dataProvider = $model->filter(Yii::$app->request->get());
         return $this->render('index',[
             'dataProvider' => $dataProvider,
-//            TODO обработать массив проектов во вьюхе index
         ]);
     }
 
