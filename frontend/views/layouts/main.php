@@ -162,7 +162,6 @@ AppAsset::register($this);
         </footer>
     </div>
     <?= LoginFormWidget::widget() ?>
-
     <?php $this->endBody() ?>
     </body>
     </html>
