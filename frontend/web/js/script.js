@@ -132,7 +132,6 @@ if (main) {
         multiple: true,
         weekStart: 1,
     });
-// Slider end
 }
 
 document.querySelector('.sign-in').addEventListener('click', function () {
