@@ -28,19 +28,4 @@ class m190601_154057_add_to_projects_Photo_processing_time_field extends Migrati
 
         return true;
     }
-
-    /*
-    // Use up()/down() to run migration code without a transaction.
-    public function up()
-    {
-
-    }
-
-    public function down()
-    {
-        echo "m190601_154057_add_to_projects_Photo_processing_time_field cannot be reverted.\n";
-
-        return false;
-    }
-    */
 }
