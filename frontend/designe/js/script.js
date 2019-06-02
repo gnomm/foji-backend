@@ -101,16 +101,17 @@ if (document.querySelector('.project')) {
 }
 
 //Slider
-// const slides = [
-//     './images/test-slider-images/32064b1aac54770337ec95ea346e2db2.jpg',
-//     './images/test-slider-images/3146278.jpg',
-//     './images/test-slider-images/IMG_5762_web-1024x684.jpg',
-//     './images/test-slider-images/s1200.webp'
-// ];
+const slides = [
+    './images/project/lovestory.jpg',
+    './images/project/pair.png',
+    './images/project/lovestory.jpg',
+    './images/project/pair.png',
+
+];
 //
-// let page = 0;
-// let prevPage = slides.length;
-//
+let prevPage = 0;
+let current;
+
 // function showNext(slides, points) {
 //     page = (page + 1) % slides.length;
 //     prevPage = page;
@@ -143,7 +144,47 @@ if (document.querySelector('.project')) {
 //
 // let timerSlider;
 //
-// document.onreadystatechange = () => {
+document.addEventListener("DOMContentLoaded", () => {
+    const previewsBlock = document.getElementsByClassName('project-preview-block')[0];
+    const mainImages = document.getElementsByClassName('project-main-slide');
+    console.log(mainImages);
+    mainImages[0].src=slides[0];
+    mainImages[1].src=slides[0];
+    const previews = [];
+    slides.forEach((src, index)=>{
+        const preview = document.createElement('img');
+        preview.src = src;
+        preview.className = 'preview';
+        if (index === 0) preview.classList.add('preview-current') ;
+        previewsBlock.appendChild(preview);
+        previews.push(preview);
+        preview.addEventListener('click',()=>{
+            prevPage=current? current: 0;
+            current=index;
+            previews[prevPage].classList.remove('preview-current');
+            preview.classList.add('preview-current');
+            if (current>1){
+                previewsBlock.style.transform= 'translateX(-'+ 115*(current-1) +'px)';
+            }else{
+                previewsBlock.style.transform= 'translateX(0)';
+            }
+            const slide1 = document.getElementsByClassName('project-slide-prev')[0];
+            const slide2 = document.getElementsByClassName('project-slide-current')[0]?
+                document.getElementsByClassName('project-slide-current')[0] :
+                document.getElementsByClassName('project-slide-prev')[1];
+            slide1.classList.remove('project-slide-prev');
+            slide2.classList.remove('project-slide-current');
+            slide2.classList.add('project-slide-prev');
+            slide1.classList.add('project-slide-current');
+            slide1.src= slides[index];
+
+        })
+
+    })
+
+
+
+
 //     const slides = document.getElementsByClassName('slider__panel');
 //     const points = document.getElementsByClassName('slider__nav-point');
 //
@@ -162,7 +203,7 @@ if (document.querySelector('.project')) {
 //         showPrevious(slides, points);
 //         timerSlider = setInterval(() => showNext(slides, points), 5000);
 //     };
-// };
+});
 //
 // var ranged = new Datepicker('#datepicker', {
 //     inline: true,
