@@ -595,7 +595,7 @@ a {
       transition-duration: 0s; }
 
 @media (max-width: 759px) {
-  .slider__nav {
+  .slider .slider__nav {
     display: none; } }
 #next, #prev {
   cursor: pointer; }
