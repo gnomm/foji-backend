@@ -831,20 +831,21 @@ a.datepicker__prev, a.datepicker__next {
 
 .project-slide-current {
   left: 100%;
-  animation: slide 1s forwards;
+  animation: slide 0.5s forwards;
   z-index: 1;
   width: 100%; }
 
 .project-preview-wrapper {
   margin-top: 20px;
   height: 115px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .project-preview-block {
   height: 100%;
   display: flex;
   align-items: center;
-  transition-duration: 1s; }
+  transition-duration: 0.5s; }
   .project-preview-block .preview {
     max-width: 100px;
     max-height: 100px;
@@ -880,6 +881,34 @@ a.datepicker__prev, a.datepicker__next {
 
   .breadcrumbs {
     display: none; } }
+.hasLefts {
+  height: 100%;
+  width: 20px;
+  background: #F4F4F4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "<";
+  font-size: 200%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5; }
+
+.hasRights {
+  height: 100%;
+  width: 20px;
+  background: #e9e9e9;
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: ">";
+  font-size: 200%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5; }
+
 .modal-sign-in {
   display: none;
   position: absolute;
