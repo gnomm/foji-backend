@@ -11,6 +11,7 @@ let prevPage = 0;
 let current;
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Slider
     const previewsBlock = document.getElementsByClassName('project-preview-block')[0];
     const hasLefts = document.getElementsByClassName('hasLefts')[0];
     const hasRights = document.getElementsByClassName('hasRights')[0];
@@ -29,9 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const mainImages = document.getElementsByClassName('project-main-slide');
-    console.log(mainImages);
     const width = mainImages[0].clientWidth;
-    const staticLimit = Math.floor(width / 115);
+    const staticLimit = Math.floor(width / 120);
     mainImages[0].src = slides[0];
     mainImages[1].src = slides[0];
     const previews = [];
@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (rights) {
         hasRights.style.display = 'flex'
     }
-    ;
     slides.forEach((src, index) => {
         const preview = document.createElement('img');
         preview.src = src;
@@ -53,6 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
             current = index;
             previews[prevPage].classList.remove('preview-current');
             preview.classList.add('preview-current');
+            console.log(current > staticLimit - 1);
+
             if (current > staticLimit - 1) {
                 console.log('работает');
                 lefts = current - staticLimit + 1;
@@ -97,6 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
         rights = slides.length - staticLimit - lefts;
         previewsBlock.style.transform = 'translateX(-' + 115 * lefts + 'px)';
         renderNavs();
+    });
+    //How-to-reach
+    const reachButton = document.getElementsByClassName('how-to-reach')[0];
+    const reachText = document.getElementsByClassName('how-to-reach-text')[0];
+    reachButton.addEventListener('click', ()=>{
+        reachText.classList.toggle('shown')
     })
 });
 
