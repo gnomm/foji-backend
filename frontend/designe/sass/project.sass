@@ -272,6 +272,7 @@
       display: block
 
 .comment-header
+  height: 40px
   img
     float: left
     margin-right: 20px
@@ -279,8 +280,19 @@
     font-weight: normal
     font-size: 15px
     line-height: 18px
+.comment
+  border-bottom:  0.5px solid rgba(0, 0, 0, 0.2)
+  margin-bottom: 20px
+
   p
     width: 100%
+    margin: 10px 0 20px
+.comment:nth-last-child(1), .comment:nth-last-child(2)
+  border-bottom: none
+
+.btn-comment
+  width: 200px !important
+
 @media (max-width: 530px)
   .project .project-main-information, .project .project-sub-information
     width: 100%

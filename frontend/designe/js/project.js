@@ -88,13 +88,13 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     });
     hasLefts.addEventListener('click', () => {
-        lefts = Math.max(lefts-staticLimit, 0);
+        lefts = Math.max(lefts - staticLimit, 0);
         rights = slides.length - staticLimit - lefts;
         previewsBlock.style.transform = 'translateX(-' + 115 * lefts + 'px)';
         renderNavs();
     });
     hasRights.addEventListener('click', () => {
-        lefts = Math.min(lefts+staticLimit, slides.length-staticLimit-1);
+        lefts = Math.min(lefts + staticLimit, slides.length - staticLimit - 1);
         rights = slides.length - staticLimit - lefts;
         previewsBlock.style.transform = 'translateX(-' + 115 * lefts + 'px)';
         renderNavs();
@@ -102,8 +102,23 @@ document.addEventListener("DOMContentLoaded", () => {
     //How-to-reach
     const reachButton = document.getElementsByClassName('how-to-reach')[0];
     const reachText = document.getElementsByClassName('how-to-reach-text')[0];
-    reachButton.addEventListener('click', ()=>{
+    reachButton.addEventListener('click', () => {
         reachText.classList.toggle('shown')
-    })
+    });
+
+    //tabs
+    const tabs = document.getElementsByClassName('tabs-item text_big switchable');
+    const tabContents = document.getElementsByClassName('text tabs-panel switchable');
+    for (let j = 0; j < tabs.length; j++) {
+        tabs[j].addEventListener('click', () => {
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+                tabContents[i].classList.remove('active');
+            }
+            tabs[j].classList.add('active');
+            tabContents[j].classList.add('active');
+        })
+
+    }
 });
 

@@ -937,15 +937,28 @@ a.datepicker__prev, a.datepicker__next {
       height: 100%;
       z-index: 1;
       display: block; } }
-.comment-header img {
-  float: left;
-  margin-right: 20px; }
-.comment-header .name {
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 18px; }
-.comment-header p {
-  width: 100%; }
+.comment-header {
+  height: 40px; }
+  .comment-header img {
+    float: left;
+    margin-right: 20px; }
+  .comment-header .name {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px; }
+
+.comment {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; }
+  .comment p {
+    width: 100%;
+    margin: 10px 0 20px; }
+
+.comment:nth-last-child(1), .comment:nth-last-child(2) {
+  border-bottom: none; }
+
+.btn-comment {
+  width: 200px !important; }
 
 @media (max-width: 530px) {
   .project .project-main-information, .project .project-sub-information {
