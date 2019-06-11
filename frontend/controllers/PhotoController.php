@@ -72,9 +72,9 @@ class PhotoController extends Controller
            // var_dump($_FILES); exit;
             $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
             if (!empty($model->imageFile)){
-                $model->imageFile->saveAs('uploads/' . $imageName . '.' . $model->imageFile->extension);
                 $model->image = 'uploads/' . $imageName . '.' . $model->imageFile->extension;
                 $model->save();
+                $model->imageFile->saveAs('uploads/' . $imageName . '.' . $model->imageFile->extension);
             }
         }
 
