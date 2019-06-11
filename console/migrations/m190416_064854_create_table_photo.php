@@ -27,15 +27,6 @@ class m190416_064854_create_table_photo extends Migration
 
         ], $tableOptions);
 
-        $this->addForeignKey(
-            'fk-photo_project_id',
-            'photo',
-            'project_id',
-            'project',
-            'id',
-            'CASCADE',
-            'CASCADE'
-        );
     }
 
     /**
@@ -43,7 +34,7 @@ class m190416_064854_create_table_photo extends Migration
      */
     public function safeDown()
     {
-        $this->dropForeignKey('fk-photo_project_id', 'photo');
+
         $this->dropTable('photo');
 
         return true;

@@ -5,7 +5,7 @@ namespace common\models\tables;
 use common\models\Photographer;
 use common\models\ProjectCalendar;
 use common\models\ProjectFeedback;
-use common\models\tables\UploadPhoto;
+use common\models\tables\Photo;
 use common\models\User;
 use Yii;
 use yii\behaviors\TimestampBehavior;
@@ -43,11 +43,12 @@ use yii\db\ActiveRecord;
  * @property int $updated_at
  * @property int $user_id
  *
- * @property UploadPhoto[] $photos
+ * @property hoto[] $photos
  * @property Photographer $photographer
  * @property User $user
  * @property ProjectCalendar[] $projectCalendars
  * @property ProjectFeedback[] $projectFeedbacks
+ * @property Photo $Photo
  */
 class Project extends ActiveRecord
 {
@@ -72,7 +73,7 @@ class Project extends ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'theme', 'location', 'date_start', 'date_end', 'time_start', 'time_end', 'duration', 'qty_photos', 'price'], 'required'],
+           // [['name', 'theme', 'location', 'date_start', 'date_end', 'time_start', 'time_end', 'duration', 'qty_photos', 'price'], 'required'],
             [['date_start', 'date_end', 'time_start', 'time_end'], 'safe'],
             [['duration', 'qty_photos', 'makeup', 'hairstyle', 'costume', 'accessories', 'studio', 'prepayment', 'price'], 'integer'],
             [['info', 'status'], 'string'],
@@ -120,7 +121,7 @@ class Project extends ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getPhotos()
+    public function getPhoto()
     {
         return $this->hasMany(UploadPhoto::className(), ['project_id' => 'id']);
     }

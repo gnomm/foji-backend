@@ -4,12 +4,12 @@ namespace common\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\tables\UploadPhoto;
+use common\models\tables\Photo;
 
 /**
- * UploadPhotoSearch represents the model behind the search form of `common\models\tables\UploadPhoto`.
+ * PhotoSearch represents the model behind the search form of `common\models\tables\Photo`.
  */
-class UploadPhotoSearch extends UploadPhoto
+class PhotoSearch extends Photo
 {
     /**
      * {@inheritdoc}
@@ -18,7 +18,7 @@ class UploadPhotoSearch extends UploadPhoto
     {
         return [
             [['id', 'project_id', 'active_photo', 'main_photo'], 'integer'],
-            [['image', 'created_at'], 'safe'],
+            [['image', 'created_at', 'updated_at'], 'safe'],
         ];
     }
 
@@ -40,7 +40,7 @@ class UploadPhotoSearch extends UploadPhoto
      */
     public function search($params)
     {
-        $query = UploadPhoto::find();
+        $query = Photo::find();
 
         // add conditions that should always apply here
 
@@ -63,6 +63,7 @@ class UploadPhotoSearch extends UploadPhoto
             'active_photo' => $this->active_photo,
             'main_photo' => $this->main_photo,
             'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ]);
 
         $query->andFilterWhere(['like', 'image', $this->image]);

@@ -40,7 +40,7 @@ AppAsset::register($this);
         ['label' => 'About', 'url' => ['/site/about']],
         ['label' => 'Contact', 'url' => ['/site/contact']],
         ['label' => 'Project', 'url' => ['/project/index']],
-        ['label' => 'UploadPhoto', 'url' => ['/upload/index']],
+        ['label' => 'UploadPhoto', 'url' => ['/photo/index']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];

@@ -3,16 +3,17 @@
 namespace frontend\controllers;
 
 use Yii;
-use common\models\tables\UploadPhoto;
-use common\models\UploadPhotoSearch;
+use common\models\tables\Photo;
+use common\models\PhotoSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
- * UploadPhotoController implements the CRUD actions for UploadPhoto model.
+ * PhotoController implements the CRUD actions for Photo model.
  */
-class UploadPhotoController extends Controller
+class PhotoController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -21,7 +22,7 @@ class UploadPhotoController extends Controller
     {
         return [
             'verbs' => [
-                'class' => VerbFilter::className(),
+                'class'   => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
                 ],
@@ -30,22 +31,22 @@ class UploadPhotoController extends Controller
     }
 
     /**
-     * Lists all UploadPhoto models.
+     * Lists all Photo models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new UploadPhotoSearch();
+        $searchModel = new PhotoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
+            'searchModel'  => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
 
     /**
-     * Displays a single UploadPhoto model.
+     * Displays a single Photo model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,25 +59,30 @@ class UploadPhotoController extends Controller
     }
 
     /**
-     * Creates a new UploadPhoto model.
+     * Creates a new Photo model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new UploadPhoto();
+        $model = new Photo();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $imageName=time();
+           // var_dump($_FILES); exit;
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            if (!empty($model->imageFile)){
+                $model->imageFile->saveAs('uploads/' . $imageName . '.' . $model->imageFile->extension);
+                $model->image = 'uploads/' . $imageName . '.' . $model->imageFile->extension;
+                $model->save();
+            }
         }
 
-        return $this->render('create', [
-            'model' => $model,
-        ]);
+        return $this->render('create', ['model' => $model]);
     }
 
     /**
-     * Updates an existing UploadPhoto model.
+     * Updates an existing Photo model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -87,7 +93,14 @@ class UploadPhotoController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            $imageName=time();
+            // var_dump($_FILES); exit;
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            if (!empty($model->imageFile)){
+                $model->imageFile->saveAs('uploads/' . $imageName . '.' . $model->imageFile->extension);
+                $model->image = 'uploads/' . $imageName . '.' . $model->imageFile->extension;
+                $model->save();
+            }
         }
 
         return $this->render('update', [
@@ -96,7 +109,7 @@ class UploadPhotoController extends Controller
     }
 
     /**
-     * Deletes an existing UploadPhoto model.
+     * Deletes an existing Photo model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,15 +123,15 @@ class UploadPhotoController extends Controller
     }
 
     /**
-     * Finds the UploadPhoto model based on its primary key value.
+     * Finds the Photo model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return UploadPhoto the loaded model
+     * @return Photo the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = UploadPhoto::findOne($id)) !== null) {
+        if (($model = Photo::findOne($id)) !== null) {
             return $model;
         }
 
