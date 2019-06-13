@@ -120,5 +120,15 @@ document.addEventListener("DOMContentLoaded", () => {
         })
 
     }
+
+    //status
+    const toJoin = document.getElementsByClassName('btn-project')[0];
+    const statusBlock =  document.getElementsByClassName('project-status-block')[0];
+    toJoin.addEventListener('click', ()=>{
+        console.log('work');
+        statusBlock.classList.remove('active');
+        statusBlock.classList.add('joined');
+    })
+
 });
 

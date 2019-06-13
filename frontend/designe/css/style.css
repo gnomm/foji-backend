@@ -1014,6 +1014,84 @@ a.datepicker__prev, a.datepicker__next {
   align-items: center;
   opacity: 0.5; }
 
+.project-status-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .project-status-block .fa {
+    margin-right: 5px; }
+  .project-status-block .btn-project {
+    display: none; }
+  .project-status-block .project-request-sent {
+    display: none;
+    min-width: 50%;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    color: #FF4546; }
+  .project-status-block .project-cancel {
+    display: none;
+    width: fit-content;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #C4C4C4; }
+  .project-status-block .project-manager {
+    display: none;
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000; }
+  .project-status-block .project-btn-message {
+    display: none;
+    width: 160px;
+    height: 30px;
+    margin-top: 15px;
+    border: 1px solid #FF4546; }
+  .project-status-block .project-finished {
+    display: none;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px; }
+  .project-status-block .project-responses {
+    display: none;
+    justify-content: center;
+    width: 100%; }
+    .project-status-block .project-responses .project-old-responses {
+      align-content: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      text-decoration: underline; }
+    .project-status-block .project-responses .project-new-responses {
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none !important;
+      color: #FF4546; }
+
+.project-status-block.active .btn-project {
+  display: flex; }
+
+.project-status-block.joined .project-request-sent, .project-status-block.joined .project-cancel, .project-status-block.joined .project-manager {
+  display: block; }
+.project-status-block.joined .project-btn-message {
+  display: flex; }
+
+.project-status-block.finished .project-finished {
+  display: flex; }
+
+.project-status-block.responses .project-responses {
+  display: flex; }
+
 .modal-sign-in {
   display: none;
   position: absolute;
