@@ -6,6 +6,8 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model common\models\tables\Project */
 /* @var $form yii\widgets\ActiveForm */
+/* @var $photographer array*/
+/* @var @user array*/
 ?>
 
 <div class="project-form">
@@ -54,11 +56,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'info')->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'photographer_id')->textInput() ?>
+    <?= $form->field($model, 'photographer_id')->dropDownList($photographer)->label('photographer_id') ?>
 
     <?= $form->field($model, 'status')->dropDownList([ 'moderation' => 'Moderation', 'correction' => 'Correction', 'published' => 'Published', 'finished' => 'Finished', ], ['prompt' => '']) ?>
 
-    <?= $form->field($model, 'user_id')->textInput() ?>
+    <?= $form->field($model, 'user_id')->dropDownList($user)->label('user_id') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

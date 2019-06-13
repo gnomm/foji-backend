@@ -6,13 +6,14 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model common\models\tables\Photo */
 /* @var $form yii\widgets\ActiveForm */
+/* @var $project array*/
 ?>
 
 <div class="photo-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'project_id')->textInput() ?>
+    <?= $form->field($model, 'project_id')->dropDownList($project)->label('project_id') ?>
 
     <?= $form->field($model, 'active_photo')->textInput() ?>
 

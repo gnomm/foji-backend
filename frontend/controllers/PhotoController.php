@@ -2,9 +2,11 @@
 
 namespace frontend\controllers;
 
+use common\models\tables\Project;
 use Yii;
 use common\models\tables\Photo;
 use common\models\PhotoSearch;
+use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -78,7 +80,13 @@ class PhotoController extends Controller
             }
         }
 
-        return $this->render('create', ['model' => $model]);
+        $project = ArrayHelper::map(Project::find()->all(), 'id', 'project_id');
+
+        return $this->render('create', [
+            'model' => $model,
+            'project' => $project,
+            ]
+        );
     }
 
     /**
@@ -103,8 +111,10 @@ class PhotoController extends Controller
             }
         }
 
+        //$project = ArrayHelper::map(Project::find()->all(), 'id', 'project_id');
         return $this->render('update', [
             'model' => $model,
+           // 'project' => $project,
         ]);
     }
 
