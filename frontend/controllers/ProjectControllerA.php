@@ -13,9 +13,9 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ProjectController implements the CRUD actions for Project model.
+ * ProjectControllerA implements the CRUD actions for Project model.
  */
-class ProjectController extends Controller
+class ProjectControllerA extends Controller
 {
     /**
      * {@inheritdoc}
