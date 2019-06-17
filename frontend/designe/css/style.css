@@ -1092,6 +1092,9 @@ a.datepicker__prev, a.datepicker__next {
 .project-status-block.responses .project-responses {
   display: flex; }
 
+.project-map {
+  filter: grayscale(1); }
+
 .modal-sign-in {
   display: none;
   position: absolute;

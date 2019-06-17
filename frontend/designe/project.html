@@ -761,9 +761,13 @@
             {
                 center: [55.751574, 37.573856],
                 zoom: 9,
-                controls: []
+                controls: ['smallMapDefaultSet']
             },
-        )
+        ), myPlacemark = new ymaps.Placemark([55.751574, 37.573856], {
+            // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+            balloonContentHeader: "Здесь адрес",
+        });
+        myMap.geoObjects.add(myPlacemark);
     })
 </script>
 <script src="js/project.js"></script>
