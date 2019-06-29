@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\tables\Project */
+/* @var $model common\models\Project */
 /* @var  $photographer array*/
 /* @var $user array*/
 

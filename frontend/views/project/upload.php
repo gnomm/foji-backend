@@ -3,7 +3,7 @@
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
 /**@var yii\widgets\ActiveForm $form; */
-/* @var $model \common\models\tables\UploadPhoto */
+/* @var $model \common\models\Photo */
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;

@@ -5,7 +5,7 @@ namespace common\models\query;
 /**
  * This is the ActiveQuery class for [[\common\models\tables\Photo]].
  *
- * @see \common\models\tables\Photo
+ * @see \common\models\Photo
  */
 class PhotoQuery extends \yii\db\ActiveQuery
 {

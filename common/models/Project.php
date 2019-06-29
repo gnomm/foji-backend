@@ -1,12 +1,7 @@
 <?php
 
-namespace common\models\tables;
+namespace common\models;
 
-use common\models\Photographer;
-use common\models\ProjectCalendar;
-use common\models\ProjectFeedback;
-use common\models\tables\Photo;
-use common\models\User;
 use Yii;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
@@ -43,7 +38,7 @@ use yii\db\ActiveRecord;
  * @property int $updated_at
  * @property int $user_id
  *
- * @property hoto[] $photos
+ * @property photo[] $photos
  * @property Photographer $photographer
  * @property User $user
  * @property ProjectCalendar[] $projectCalendars
@@ -123,7 +118,7 @@ class Project extends ActiveRecord
      */
     public function getPhoto()
     {
-        return $this->hasMany(UploadPhoto::className(), ['project_id' => 'id']);
+        return $this->hasMany(Photo::className(), ['project_id' => 'id']);
     }
 
     /**

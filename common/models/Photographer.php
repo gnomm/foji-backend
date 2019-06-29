@@ -3,7 +3,6 @@
 namespace common\models;
 
 use Yii;
-use common\models\tables\Project;
 
 /**
  * This is the model class for table "photographer".

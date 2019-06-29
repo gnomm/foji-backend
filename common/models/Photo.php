@@ -1,10 +1,8 @@
 <?php
 
-namespace common\models\tables;
-
+namespace common\models;
 
 use Yii;
-use common\models\tables\Project;
 use yii\db\ActiveRecord;
 use yii\web\UploadedFile;
 

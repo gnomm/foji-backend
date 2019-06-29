@@ -2,9 +2,9 @@
 
 namespace frontend\controllers;
 
-use common\models\tables\Project;
+use common\models\Project;
 use Yii;
-use common\models\tables\Photo;
+use common\models\Photo;
 use common\models\PhotoSearch;
 use yii\helpers\ArrayHelper;
 use yii\web\Controller;

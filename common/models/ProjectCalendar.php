@@ -2,7 +2,7 @@
 
 namespace common\models;
 
-use common\models\tables\Project;
+
 use Yii;
 use yii\behaviors\TimestampBehavior;
 

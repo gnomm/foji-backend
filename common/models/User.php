@@ -2,7 +2,6 @@
 
 namespace common\models;
 
-use common\models\tables\Project;
 use lhs\Yii2SaveRelationsBehavior\SaveRelationsBehavior;
 use Yii;
 use yii\base\NotSupportedException;

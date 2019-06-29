@@ -5,7 +5,7 @@ namespace frontend\controllers;
 use common\models\Photographer;
 use common\models\User;
 use Yii;
-use common\models\tables\Project;
+use common\models\Project;
 use common\models\ProjectSearch;
 use yii\helpers\ArrayHelper;
 use yii\web\Controller;
