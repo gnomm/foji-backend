@@ -4,6 +4,7 @@ namespace frontend\controllers;
 
 use common\models\Photographer;
 use common\models\User;
+use common\models\Photo;
 use Yii;
 use common\models\Project;
 use common\models\ProjectSearch;
@@ -135,5 +136,26 @@ class ProjectControllerA extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    public function actionUploadPhoto()
+    {
+        $model = new Photo();
+        if ($model->load(Yii::$app->request->post())) {
+            // var_dump($_FILES); exit;
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            $fileName = strtolower(md5(uniqid($model->imageFile->baseName)) . '.' . $model->imageFile->extension);
+            //var_dump(strtolower(md5(uniqid($model->imageFile->baseName)) . '.' . $model->imageFile->extension)); die;
+            if (!empty($model->imageFile)){
+                $model->image = 'uploads/' . $fileName;
+                $model->save();
+                $model->imageFile->saveAs('uploads/' . $fileName);
+            }
+        }
+        $project = ArrayHelper::map(Project::find()->all(), 'id', 'id');
+        return $this->render('upload', [
+            'model'=>$model,
+            'project'=>$project,
+        ]);
     }
 }

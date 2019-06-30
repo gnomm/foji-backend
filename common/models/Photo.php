@@ -80,13 +80,4 @@ class Photo extends ActiveRecord
         return new \common\models\query\PhotoQuery(get_called_class());
     }
 
-    /*public function upload()
-    {
-        if ($this->validate()) {
-            $this->imageFile->saveAs('uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension);
-            return true;
-        } else {
-            return false;
-        }
-    }*/
 }
