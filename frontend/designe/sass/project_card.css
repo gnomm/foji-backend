@@ -1,0 +1,60 @@
+.project-card {
+  max-width: 540px;
+  padding-top: 25px;
+  padding-bottom: 60px;
+  border-top: 1px solid #000; }
+  .project-card:hover .project-btn-group {
+    visibility: visible; }
+  .project-card .icon {
+    margin-right: 15px; }
+  .project-card .project-card-header {
+    margin-bottom: 25px; }
+    .project-card .project-card-header .city {
+      font-weight: normal; }
+  .project-card .project-img {
+    width: 100%; }
+  .project-card .descriptions {
+    margin-top: 20px; }
+  .project-card .location {
+    display: flex;
+    align-items: center; }
+  .project-card .characteristics {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px; }
+  .project-card .characteristics-item {
+    display: flex;
+    margin-bottom: 15px; }
+  .project-card .characteristics-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+  .project-card .project-btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    visibility: hidden; }
+
+@media (max-width: 1125px) {
+  .project-card {
+    width: 520px; } }
+@media (max-width: 1085px) {
+  .project-card {
+    width: 500px; } }
+@media (max-width: 1045px) {
+  .project-card {
+    width: 540px;
+    margin: 0 auto; } }
+@media (max-width: 900px) {
+  .project-card .project-btn-group {
+    visibility: visible; } }
+@media (max-width: 570px) {
+  .project-card {
+    width: 100%;
+    padding-bottom: 45px; }
+    .project-card .project-btn-group {
+      flex-wrap: wrap; }
+    .project-card .btn-project {
+      width: 100%; }
+      .project-card .btn-project:first-child {
+        margin-bottom: 15px; } }
