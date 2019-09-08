@@ -130,8 +130,6 @@
         <main class="new_project">
             <div class="container">
                 <div class="about_new_project">
-
-
                     <div class="new_project_information">
                         <header class="project-header new_project_header">
                             <h2>Новый проект</h2>
@@ -142,8 +140,10 @@
                                 <div class="category_checkbox">
                                     <form method="post" action="#" class="new_project_category">
                                         <div class="input_top">
+                                            <div>
                                             <input type="checkbox" id="c-1"/>
-                                            <label for="c-1">Love Story</label>
+                                        </div>
+                                            <div><label for="c-1">Love Story</label></div>
                                         </div>
                                         <div class="input_middle">
                                             <input type="checkbox" id="c-2"/>
@@ -198,12 +198,12 @@
                                 </div>
                             </div>
 
-                            <div class="new_project_map">
+                            <div class="new_project_address new_project_map">
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8f3539f894308b13d6bbe82a738178ed1cfe2fca87b51c1dd633f2b924a0945f&amp;source=constructor"
                                         width="825" height="240" frameborder="0"></iframe>
                             </div>
 
-                            <div class="how_to_get">
+                            <div class="how_to_get additional_wrap">
                                 <div class="address_city">
                                     <form>
                                         <div class="label_city_middle">
@@ -214,14 +214,14 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="new_project_address">
+                            <div class="new_project_address additional_wrap">
 
                                 <div class="address_city">
                                     <form>
                                         <div class="label_city">
                                             <div>
                                                 <p class="leftstr">Дата проведения*</p>
-                                                <p class="rightstr">Сбросить</p>
+                                                <p class="rightstr"><button type="reset" value="Сбросить">Сбросить</button></p>
                                             </div>
                                             <!--                                        <label class="text>"> Город</label>-->
                                             <input name="city" class="" type="text">
@@ -264,9 +264,18 @@
                                             <input list="input-minutes-from-1" class="time-spending-hours" type="text">
                                             <datalist id="input-minutes-from-1" class="time-dropdown"
                                                       readonly="readonly">
-                                                <option value="07"></option>
-                                                <option value="08"></option>
-                                                <option value="09"></option>
+                                                <option value="5"></option>
+                                                <option value="10"></option>
+                                                <option value="15"></option>
+                                                <option value="20"></option>
+                                                <option value="25"></option>
+                                                <option value="30"></option>
+                                                <option value="35"></option>
+                                                <option value="40"></option>
+                                                <option value="45"></option>
+                                                <option value="50"></option>
+                                                <option value="55"></option>
+                                                <option value="60"></option>
                                             </datalist>
 
                                             <span class="input-time-span">до</span>
@@ -296,16 +305,25 @@
                                                    type="text">
                                             <datalist id="input-minutes-before-1" class="time-dropdown"
                                                       readonly="readonly">
-                                                <option value="07"></option>
-                                                <option value="08"></option>
-                                                <option value="09"></option>
+                                                <option value="5"></option>
+                                                <option value="10"></option>
+                                                <option value="15"></option>
+                                                <option value="20"></option>
+                                                <option value="25"></option>
+                                                <option value="30"></option>
+                                                <option value="35"></option>
+                                                <option value="40"></option>
+                                                <option value="45"></option>
+                                                <option value="50"></option>
+                                                <option value="55"></option>
+                                                <option value="60"></option>
                                             </datalist>
                                             <!--                                        </div>
                                                                                     <div class="input-time">-->
 
                                             <span class="input-time-space">с</span>
-                                            <input list="input-hours-from" class="time-spending-hours" type="text">
-                                            <datalist id="input-hours-from" class="time-dropdown" disabled="disabled">
+                                            <input list="input-hours-from-2" class="time-spending-hours" type="text">
+                                            <datalist id="input-hours-from-2" class="time-dropdown" disabled="disabled">
                                                 <option value="07"></option>
                                                 <option value="08"></option>
                                                 <option value="09"></option>
@@ -325,16 +343,25 @@
                                                 <option value="23"></option>
                                             </datalist>
                                             <span>:</span>
-                                            <input list="input-minutes-from" class="time-spending-hours" type="text">
-                                            <datalist id="input-minutes-from" class="time-dropdown" readonly="readonly">
-                                                <option value="07"></option>
-                                                <option value="08"></option>
-                                                <option value="09"></option>
+                                            <input list="input-minutes-from-2" class="time-spending-hours" type="text">
+                                            <datalist id="input-minutes-from-2" class="time-dropdown" readonly="readonly">
+                                                <option value="5"></option>
+                                                <option value="10"></option>
+                                                <option value="15"></option>
+                                                <option value="20"></option>
+                                                <option value="25"></option>
+                                                <option value="30"></option>
+                                                <option value="35"></option>
+                                                <option value="40"></option>
+                                                <option value="45"></option>
+                                                <option value="50"></option>
+                                                <option value="55"></option>
+                                                <option value="60"></option>
                                             </datalist>
 
                                             <span class="input-time-span">до</span>
-                                            <input list="input-hours-before" class="time-spending-hours" type="text">
-                                            <datalist id="input-hours-before" class="time-dropdown" disabled="disabled">
+                                            <input list="input-hours-before-2" class="time-spending-hours" type="text">
+                                            <datalist id="input-hours-before-2" class="time-dropdown" disabled="disabled">
                                                 <option value="07"></option>
                                                 <option value="08"></option>
                                                 <option value="09"></option>
@@ -354,12 +381,21 @@
                                                 <option value="23"></option>
                                             </datalist>
                                             <span>:</span>
-                                            <input list="input-minutes-before" class="time-spending-hours" type="text">
-                                            <datalist id="input-minutes-before" class="time-dropdown"
+                                            <input list="input-minutes-before-2" class="time-spending-hours" type="text">
+                                            <datalist id="input-minutes-before-2" class="time-dropdown"
                                                       readonly="readonly">
-                                                <option value="07"></option>
-                                                <option value="08"></option>
-                                                <option value="09"></option>
+                                                <option value="5"></option>
+                                                <option value="10"></option>
+                                                <option value="15"></option>
+                                                <option value="20"></option>
+                                                <option value="25"></option>
+                                                <option value="30"></option>
+                                                <option value="35"></option>
+                                                <option value="40"></option>
+                                                <option value="45"></option>
+                                                <option value="50"></option>
+                                                <option value="55"></option>
+                                                <option value="60"></option>
                                             </datalist>
                                         </div>
                                     </form>
@@ -377,7 +413,7 @@
                                 </div>
                             </div>
 
-                            <div class="new_project_address">
+                            <div class="new_project_address additional_wrap">
 
                                 <div class="address_city">
                                     <form>
@@ -397,8 +433,8 @@
                                                 <p class="leftstr">Срок обработки фото</p>
                                             </div>
                                             <div class="input-processing-time">
-                                            <input name="city" class="" type="text">
-                                            <p>недель</p>
+                                                <input name="city" class="" type="text">
+                                                <p>недель</p>
                                             </div>
                                             <div class="city-line"></div>
 
@@ -408,7 +444,7 @@
 
                             </div>
 
-                            <div class="new_project_address">
+                            <div class="new_project_address additional_wrap">
 
                                 <div class="address_city">
                                     <form>
@@ -445,10 +481,10 @@
                                 </div>
                             </div>
 
-                            <div class="how_to_get descr">
+                            <div class="how_to_get descr additional_wrap">
                                 <div class="address_city">
                                     <form>
-                                        <div class="label_city_middle" style="margin-top: 12px">
+                                        <div class="label_city_middle">
                                             <label class="text>">Описание</label>
                                             <input name="city" class="" type="text">
                                             <div class="city-line"></div>
@@ -467,32 +503,32 @@
                                                 <div class="new_project_address additional_services">
                                                     <!--                                <div class="address_city">-->
                                                     <form>
-                                                        <div class="additionally">
-                                                            <input type="checkbox" id="makeup" name="makeup" style="margin: 0"/>
+                                                        <div class="new_project_additionally">
+                                                            <input type="checkbox" id="makeup" name="makeup"/>
                                                             <label for="makeup">Макияж</label>
                                                         </div>
                                                     </form>
                                                     <form>
-                                                        <div class="additionally">
-                                                            <input type="checkbox" id="hairstyle" name="hairstyle" style="margin: 0"/>
+                                                        <div class="new_project_additionally">
+                                                            <input type="checkbox" id="hairstyle" name="hairstyle"/>
                                                             <label for="hairstyle">Прическа</label>
                                                         </div>
                                                     </form>
                                                     <form>
-                                                        <div class="additionally">
-                                                            <input type="checkbox" id="Studio" name="Studio" style="margin: 0"/>
+                                                        <div class="new_project_additionally">
+                                                            <input type="checkbox" id="Studio" name="Studio"/>
                                                             <label for="Studio">Студия</label>
                                                         </div>
                                                     </form>
                                                     <form>
-                                                        <div class="additionally">
-                                                            <input type="checkbox" id="dress" name="dress" style="margin: 0"/>
+                                                        <div class="new_project_additionally">
+                                                            <input type="checkbox" id="dress" name="dress"/>
                                                             <label for="dress">Платье/костюм</label>
                                                         </div>
                                                     </form>
                                                     <form>
-                                                        <div class="additionally">
-                                                            <input type="checkbox" id="accessories" name="accessories" style="margin: 0"/>
+                                                        <div class="new_project_additionally">
+                                                            <input type="checkbox" id="accessories" name="accessories"/>
                                                             <label for="accessories">Аксессуары</label>
                                                         </div>
                                                     </form>
@@ -523,9 +559,67 @@
                                 <div class="address_city">
                                     <form>
                                         <div id="square" class="label_city">
+                                            <button>
+                                                <img src="images/icons/photo.png" alt="фото">
+                                                Добавить фото
+                                            </button>
+<!--                                            <input name="city" class="" type="text">-->
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="new_project_address additional_wrap">
+
+                                <div class="address_city">
+                                    <form>
+                                        <div class="new_project_additionally">
+                                            <input type="checkbox" id="photograph" name="photographer"/>
+                                            <label for="photograph">Я - фотограф</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="new_project_address about_photographer_wrap additional_wrap">
+                                <form>
+                                    <div class="address_city new_project_photographer">
+                                        <div class="about_photographer">
                                             <div>
-                                                <p class="leftstr">Добавить фото</p>
+                                                <p class="leftstr">О фотографе</p>
                                             </div>
+                                            <div>
+                                                <button>+Добавить фотографа</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="photographer_name">
+                                        <form>
+                                            <div class="label_city">
+                                                <div>
+                                                    <p class="leftstr">Имя</p>
+                                                </div>
+                                                <input name="city" class="" type="text">
+                                                <div class="city-line"></div>
+                                            </div>
+                                            <div class="label_city prepayment">
+                                                <div>
+                                                    <p class="leftstr">Фамилия</p>
+                                                </div>
+                                                <input name="city" class="" type="text">
+                                                <div class="city-line"></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="how_to_get additional_wrap">
+                                <div class="address_city">
+                                    <form>
+                                        <div class="label_city_middle">
+                                            <label class="text>">Информация (опыт, стиль работы, заслуги и т.д.)</label>
                                             <input name="city" class="" type="text">
                                             <div class="city-line"></div>
                                         </div>
@@ -537,20 +631,59 @@
 
                                 <div class="address_city">
                                     <form>
-                                        <div class="additionally">
-                                            <input type="checkbox" id="photograph" name="makeup" style="margin: 0"/>
-                                            <label for="photograph">Я - фотограф</label>
+                                        <div class="foresight">
+                                        <p>
+                                            <button type="submit">Предосмотр</button>
+                                        </p>
                                         </div>
                                     </form>
                                 </div>
                             </div>
 
+                            <div class="new_project_address additional_wrap">
 
+                                <div class="address_city">
+                                    <form>
+                                        <div class="new_project_additionally">
+                                            <input type="checkbox" id="skill" name="photographer"/>
+                                            <label for="skill">Я подтверждаю, что у меня имеется опыт организации фотопроектов и фотосессий</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="new_project_address additional_wrap">
+
+                                <div class="address_city">
+                                    <form>
+                                        <div class="new_project_additionally">
+                                            <input type="checkbox" id="condition" name="photographer"/>
+                                            <label for="condition">Я принимаю <a href="#">Условия использования сервиса для организаторов фотопроектов</a></label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="new_project_address additional_wrap">
+
+                                <div class="address_city">
+                                    <form>
+                                        <div class="foresight">
+                                            <p>
+                                                <button type="submit" style="background-color: #FF4546; color: white">Опубликовать</button>
+                                                <button type="submit" style="margin-left: 30px; border: 1.5px solid rgba(0, 0, 0, 0.7)">Отмена</button>
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
 
                         </div>
                     </div>
                     <div class="arrow_new_right"></div>
                 </div>
+
             </div>
 
 
