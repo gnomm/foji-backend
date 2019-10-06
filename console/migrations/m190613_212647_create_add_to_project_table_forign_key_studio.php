@@ -7,17 +7,19 @@ use yii\db\Migration;
  */
 class m190613_212647_create_add_to_project_table_forign_key_studio extends Migration
 {
-    /**
-     * {@inheritdoc}
-     */
+    /* {@inheritdoc}*/
     public function safeUp()
     {
+        $this->alterColumn(
+            'project', 'studio', 'integer'
+        );
+
         $this->addForeignKey(
             'fk-project_studio_id',
             'project',
             'studio',
             'studio',
-            'name',
+            'id',
             'CASCADE',
             'CASCADE'
         );

@@ -13,7 +13,7 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         './modules/datepicker/css/datepicker.minimal.css',
-        'css/style.css',
+        'css/style.css'
     ];
     public $js = [
         './modules/datepicker/datepicker.js',
