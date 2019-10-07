@@ -1,0 +1,273 @@
+.new_project {
+  padding: 73px 0 80px 0;
+  font-weight: 300; }
+  .new_project .about_new_project {
+    display: flex; }
+  .new_project .new_project_information {
+    width: 100%; }
+  .new_project .new_project_header {
+    margin-top: 60px;
+    position: relative; }
+  .new_project .arrow_new_right {
+    width: 380px;
+    text-align: center; }
+  .new_project .project_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .new_project .text_category {
+    padding-top: 30px; }
+  .new_project .new_project_top {
+    display: flex;
+    margin-top: 35px;
+    width: 100%; }
+  .new_project .category_checkbox {
+    width: 255px;
+    height: 105px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .new_project .input_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px; }
+  .new_project .input_middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px; }
+  .new_project .input_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px; }
+  .new_project .input_top input {
+    vertical-align: top; }
+  .new_project .input_top label {
+    vertical-align: top;
+    padding: 0 0 0 10px; }
+  .new_project .input_middle input {
+    vertical-align: middle; }
+  .new_project .input_middle label {
+    vertical-align: middle;
+    padding: 5px 0 0 10px; }
+  .new_project .input_bottom input {
+    vertical-align: bottom; }
+  .new_project .input_bottom label {
+    vertical-align: bottom;
+    padding: 5px 0 0 10px; }
+  .new_project .new_project_category {
+    padding-left: 10px; }
+  .new_project .project-line {
+    width: 285px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px; }
+  .new_project .shooting-duration {
+    padding: 30px 0 0 30px; }
+  .new_project .new_project_address {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+    .new_project .new_project_address .label_city {
+      display: flex;
+      flex-direction: column;
+      margin-top: 12px; }
+      .new_project .new_project_address .label_city input {
+        border: none;
+        margin: 10px 0 0 0; }
+    .new_project .new_project_address .city-line {
+      width: 255px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+      margin-bottom: 18px; }
+    .new_project .new_project_address .label_address {
+      display: flex;
+      flex-direction: column;
+      margin: 12px 0 0 30px; }
+      .new_project .new_project_address .label_address input {
+        border: none;
+        margin: 10px 0 0 0; }
+    .new_project .new_project_address .address-line {
+      width: 286px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+      margin-bottom: 18px; }
+  .new_project .duration_time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    width: 255px;
+    height: 104px;
+    margin: -18px 0 0 0; }
+  .new_project .new_project_map {
+    margin-top: 5px; }
+  .new_project .how_to_get {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%; }
+    .new_project .how_to_get .label_city_middle {
+      display: flex;
+      flex-direction: column; }
+      .new_project .how_to_get .label_city_middle input {
+        border: none;
+        margin: 10px 0 0 0; }
+    .new_project .how_to_get .city-line {
+      width: 100%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+      margin-bottom: 18px; }
+  .new_project .leftstr {
+    float: left; }
+  .new_project .rightstr {
+    text-align: right;
+    text-decoration: underline; }
+  .new_project .address-1 {
+    margin: 20px 0 0 0; }
+  .new_project .new_project_time {
+    display: flex;
+    flex-direction: row;
+    margin: 12px 0 0 30px; }
+  .new_project .time-spending {
+    display: flex;
+    width: 360px;
+    margin: 0 0 0 30px; }
+    .new_project .time-spending .time-spending-hours {
+      width: 25px;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.7); }
+  .new_project .descr {
+    margin: 0; }
+  .new_project .time-dropdown {
+    background-color: #ffffff;
+    opacity: 50%; }
+  .new_project .input-time {
+    margin: 7px 0 0 0; }
+  .new_project .input-time-span {
+    margin-left: 13px; }
+  .new_project .input-time-space {
+    margin-left: 23px; }
+  .new_project .address_city-plus-interval {
+    width: 160px;
+    margin-left: 30px; }
+  .new_project .processing-time {
+    margin: 0 0 0 30px; }
+    .new_project .processing-time .city-line {
+      width: 75px; }
+    .new_project .processing-time input {
+      width: 75px; }
+  .new_project datalist {
+    width: 25px; }
+  .new_project .input-processing-time {
+    display: flex;
+    flex-direction: row; }
+    .new_project .input-processing-time p {
+      padding: 0 0 0 13px; }
+  .new_project .city-line p {
+    padding: 0 0 0 65px; }
+  .new_project .prepayment {
+    margin-left: 30px; }
+  .new_project .payment_method {
+    margin-left: 30px; }
+  .new_project .additional_wrap {
+    margin: 30px 0 0 0; }
+    .new_project .additional_wrap button {
+      background-color: white;
+      border: none; }
+  .new_project .additional_services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .new_project .new_project_additionally label {
+    padding: 0 0 0 15px; }
+  .new_project .additional_services input {
+    margin: 0; }
+  .new_project #square {
+    border: 1px solid rgba(0, 0, 0, 0.7); }
+    .new_project #square button {
+      width: 65px;
+      height: 65px;
+      border: none;
+      background-color: white; }
+    .new_project #square img {
+      width: 22px;
+      height: 17px; }
+  .new_project .about_photographer_wrap {
+    display: flex;
+    flex-direction: column; }
+  .new_project .photographer_wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 30px 0 0 0; }
+  .new_project .about_photographer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .new_project .about_photographer button {
+      width: 160px;
+      height: 30px;
+      background-color: white;
+      border: 1px solid rgba(0, 0, 0, 0.6); }
+  .new_project .new_project_photographer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
+  .new_project .photographer_name {
+    display: flex;
+    flex-direction: row; }
+  .new_project .foresight p {
+    text-align: center; }
+  .new_project .foresight button {
+    width: 255px;
+    height: 45px;
+    border: 1.5px solid #FF4546;
+    font-size: 18px;
+    background-color: white; }
+
+@media (max-width: 1100px) {
+  .arrow_new_right {
+    display: none; }
+    .arrow_new_right .new_project .project_content {
+      display: flex;
+      justify-content: space-around; } }
+@media (max-width: 970px) {
+  .new_project .new_project_information {
+    width: 100%; }
+
+  .container {
+    width: 100%; }
+
+  .project_content {
+    width: 100%; } }
+@media (max-width: 530px) {
+  .new_project_header {
+    margin-top: 15px; }
+
+  .new_project_top .project-line, .new_project_top .shooting-duration {
+    display: none; }
+
+  .new_project_top .category_checkbox {
+    width: 100%; }
+
+  .project_content .new_project_address {
+    flex-direction: column; }
+    .project_content .new_project_address .city-line, .project_content .new_project_address .address-line {
+      width: 100%; }
+    .project_content .new_project_address .label_address {
+      margin: 0; }
+    .project_content .new_project_address .duration_time {
+      display: none; }
+  .project_content .new_project_map {
+    margin-top: 30px; }
+    .project_content .new_project_map iframe {
+      width: 100%;
+      height: 100px; }
+  .project_content .additional_wrap .time-spending {
+    margin: 0; }
+  .project_content .additional_wrap .processing-time {
+    margin: 0; } }
+
+/*# sourceMappingURL=new_project.css.map */

@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= $this->render('_form', [
         'model' => $model,
         'photographer' => $photographer,
-        'user' => $user,
+        'user' => $user
     ]) ?>
 
 </div>

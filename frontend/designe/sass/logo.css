@@ -1,0 +1,18 @@
+.logo {
+  display: flex;
+  align-items: center;
+  width: 63px;
+  height: 41px; }
+  .logo .not-main-page {
+    width: 63px;
+    height: 41px;
+    fill: #000; }
+  .logo .main-page {
+    width: 43px;
+    height: 28px;
+    fill: #fff; }
+
+@media (max-width: 759px) {
+  .logo {
+    width: 46px;
+    height: 30px; } }

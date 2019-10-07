@@ -14296,3 +14296,3200 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2019-06-30 18:56:45 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/upload-photo". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/upload-...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-06-30 18:56:45 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '0h2nkiq2mr746g28r2n79cbp9apudehl'
+    '_csrf-frontend' => '6afbee3d0709913308444369d9f425f8f63beeee23f0d9dd62da7ea2cb10a5f4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VKV-mntVOL0oSSbyClhg5ZQUGtnkMtSd\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'foji=0h2nkiq2mr746g28r2n79cbp9apudehl; _csrf-frontend=6afbee3d0709913308444369d9f425f8f63beeee23f0d9dd62da7ea2cb10a5f4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VKV-mntVOL0oSSbyClhg5ZQUGtnkMtSd%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '10806'
+    'REDIRECT_URL' => '/project/upload-photo'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/project/upload-photo?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1561910205.505
+    'REQUEST_TIME' => 1561910205
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
+2019-06-30 18:56:57 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/upload-photo". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/upload-...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-06-30 18:56:57 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '0h2nkiq2mr746g28r2n79cbp9apudehl'
+    '_csrf-frontend' => 'e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'foji=0h2nkiq2mr746g28r2n79cbp9apudehl; _csrf-frontend=e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '10811'
+    'REDIRECT_URL' => '/project/upload-photo'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/upload-photo'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1561910217.152
+    'REQUEST_TIME' => 1561910217
+    'argv' => []
+    'argc' => 0
+]
+2019-06-30 18:57:03 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-06-30 18:57:03 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '0h2nkiq2mr746g28r2n79cbp9apudehl'
+    '_csrf-frontend' => 'e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'foji=0h2nkiq2mr746g28r2n79cbp9apudehl; _csrf-frontend=e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '10815'
+    'REDIRECT_URL' => '/project'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1561910223.307
+    'REQUEST_TIME' => 1561910223
+    'argv' => []
+    'argc' => 0
+]
+2019-06-30 19:06:03 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "about". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('about', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-06-30 19:06:03 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '0h2nkiq2mr746g28r2n79cbp9apudehl'
+    '_csrf-frontend' => 'e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'foji=0h2nkiq2mr746g28r2n79cbp9apudehl; _csrf-frontend=e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '10912'
+    'REDIRECT_URL' => '/about'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/about'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1561910763.57
+    'REQUEST_TIME' => 1561910763
+    'argv' => []
+    'argc' => 0
+]
+2019-06-30 19:06:07 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "feedback". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('feedback', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-06-30 19:06:07 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '0h2nkiq2mr746g28r2n79cbp9apudehl'
+    '_csrf-frontend' => 'e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/about'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'foji=0h2nkiq2mr746g28r2n79cbp9apudehl; _csrf-frontend=e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '10914'
+    'REDIRECT_URL' => '/feedback'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/feedback'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1561910767.368
+    'REQUEST_TIME' => 1561910767
+    'argv' => []
+    'argc' => 0
+]
+2019-06-30 19:06:18 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "past". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('past', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-06-30 19:06:18 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '0h2nkiq2mr746g28r2n79cbp9apudehl'
+    '_csrf-frontend' => 'e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'foji=0h2nkiq2mr746g28r2n79cbp9apudehl; _csrf-frontend=e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '10922'
+    'REDIRECT_URL' => '/past'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/past'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1561910778.376
+    'REQUEST_TIME' => 1561910778
+    'argv' => []
+    'argc' => 0
+]
+2019-06-30 19:34:48 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "new.html". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('new.html', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-06-30 19:34:48 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '0h2nkiq2mr746g28r2n79cbp9apudehl'
+    '_csrf-frontend' => 'e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'foji=0h2nkiq2mr746g28r2n79cbp9apudehl; _csrf-frontend=e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '11244'
+    'REDIRECT_URL' => '/new.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/new.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1561912488.707
+    'REQUEST_TIME' => 1561912488
+    'argv' => []
+    'argc' => 0
+]
+2019-06-30 19:46:42 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-06-30 19:46:42 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '0h2nkiq2mr746g28r2n79cbp9apudehl'
+    '_csrf-frontend' => 'e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'foji=0h2nkiq2mr746g28r2n79cbp9apudehl; _csrf-frontend=e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '11384'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1561913202.671
+    'REQUEST_TIME' => 1561913202
+    'argv' => []
+    'argc' => 0
+]
+2019-06-30 19:46:47 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-06-30 19:46:47 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '0h2nkiq2mr746g28r2n79cbp9apudehl'
+    '_csrf-frontend' => 'e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'foji=0h2nkiq2mr746g28r2n79cbp9apudehl; _csrf-frontend=e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '11386'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1561913207.361
+    'REQUEST_TIME' => 1561913207
+    'argv' => []
+    'argc' => 0
+]
+2019-06-30 19:46:48 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-06-30 19:46:48 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '0h2nkiq2mr746g28r2n79cbp9apudehl'
+    '_csrf-frontend' => 'e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'foji=0h2nkiq2mr746g28r2n79cbp9apudehl; _csrf-frontend=e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '11391'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1561913208.649
+    'REQUEST_TIME' => 1561913208
+    'argv' => []
+    'argc' => 0
+]
+2019-06-30 19:46:58 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-06-30 19:46:58 [127.0.0.1][-][0h2nkiq2mr746g28r2n79cbp9apudehl][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'foji' => '0h2nkiq2mr746g28r2n79cbp9apudehl'
+    '_csrf-frontend' => 'e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"4KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'foji=0h2nkiq2mr746g28r2n79cbp9apudehl; _csrf-frontend=e2b50a5e8d634889dc23678a5e14b3610c2b42499bcd0382efb5d203780ad274a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%224KaMmcyro3h-f2ZvhKwLIfavA6R-fN9H%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '11396'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1561913218.854
+    'REQUEST_TIME' => 1561913218
+    'argv' => []
+    'argc' => 0
+]
+2019-07-15 12:51:15 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "new.html". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('new.html', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 12:51:15 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '11de077fb5676be779361a155caecb94b9d75dd6c9c8a03653f482eaff899ea9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"kE6jWsYyFyktJrvm4aJCVHXaeaBTNprq\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=11de077fb5676be779361a155caecb94b9d75dd6c9c8a03653f482eaff899ea9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22kE6jWsYyFyktJrvm4aJCVHXaeaBTNprq%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '7992'
+    'REDIRECT_URL' => '/new.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/new.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1563184275.209
+    'REQUEST_TIME' => 1563184275
+    'argv' => []
+    'argc' => 0
+]
+2019-07-15 12:51:27 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "past". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('past', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 12:51:27 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '11de077fb5676be779361a155caecb94b9d75dd6c9c8a03653f482eaff899ea9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"kE6jWsYyFyktJrvm4aJCVHXaeaBTNprq\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=11de077fb5676be779361a155caecb94b9d75dd6c9c8a03653f482eaff899ea9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22kE6jWsYyFyktJrvm4aJCVHXaeaBTNprq%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '7998'
+    'REDIRECT_URL' => '/past'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/past'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1563184287.869
+    'REQUEST_TIME' => 1563184287
+    'argv' => []
+    'argc' => 0
+]
+2019-07-15 12:51:29 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "about". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('about', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 12:51:29 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '11de077fb5676be779361a155caecb94b9d75dd6c9c8a03653f482eaff899ea9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"kE6jWsYyFyktJrvm4aJCVHXaeaBTNprq\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/past'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=11de077fb5676be779361a155caecb94b9d75dd6c9c8a03653f482eaff899ea9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22kE6jWsYyFyktJrvm4aJCVHXaeaBTNprq%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8000'
+    'REDIRECT_URL' => '/about'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/about'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1563184289.866
+    'REQUEST_TIME' => 1563184289
+    'argv' => []
+    'argc' => 0
+]
+2019-07-15 12:51:32 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "feedback". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('feedback', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 12:51:32 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '11de077fb5676be779361a155caecb94b9d75dd6c9c8a03653f482eaff899ea9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"kE6jWsYyFyktJrvm4aJCVHXaeaBTNprq\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/about'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=11de077fb5676be779361a155caecb94b9d75dd6c9c8a03653f482eaff899ea9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22kE6jWsYyFyktJrvm4aJCVHXaeaBTNprq%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8002'
+    'REDIRECT_URL' => '/feedback'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/feedback'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1563184292.514
+    'REQUEST_TIME' => 1563184292
+    'argv' => []
+    'argc' => 0
+]
+2019-07-15 13:11:05 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:11:05 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '11de077fb5676be779361a155caecb94b9d75dd6c9c8a03653f482eaff899ea9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"kE6jWsYyFyktJrvm4aJCVHXaeaBTNprq\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=11de077fb5676be779361a155caecb94b9d75dd6c9c8a03653f482eaff899ea9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22kE6jWsYyFyktJrvm4aJCVHXaeaBTNprq%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8280'
+    'REDIRECT_URL' => '/project/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1563185465.754
+    'REQUEST_TIME' => 1563185465
+    'argv' => []
+    'argc' => 0
+]
+2019-07-15 13:17:13 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/style.css.map". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/style.css.m...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-07-15 13:17:13 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '11de077fb5676be779361a155caecb94b9d75dd6c9c8a03653f482eaff899ea9a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"kE6jWsYyFyktJrvm4aJCVHXaeaBTNprq\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=11de077fb5676be779361a155caecb94b9d75dd6c9c8a03653f482eaff899ea9a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22kE6jWsYyFyktJrvm4aJCVHXaeaBTNprq%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8414'
+    'REDIRECT_URL' => '/css/style.css.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/css/style.css.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1563185833.083
+    'REQUEST_TIME' => 1563185833
+    'argv' => []
+    'argc' => 0
+]
+2019-08-01 00:07:25 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-01 00:07:24 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '4d5c159763d22cfb2eeaeaed2b2c3ade5fd67cc75b25aabd2aeae63eb3ece211a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"6DwCrC3ygHQHkpqnrGUAeg3Y5C7LlMrM\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=4d5c159763d22cfb2eeaeaed2b2c3ade5fd67cc75b25aabd2aeae63eb3ece211a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%226DwCrC3ygHQHkpqnrGUAeg3Y5C7LlMrM%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '26629'
+    'REDIRECT_URL' => '/project/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1564607244.876
+    'REQUEST_TIME' => 1564607244
+    'argv' => []
+    'argc' => 0
+]
+2019-08-01 00:13:49 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-01 00:13:49 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '4d5c159763d22cfb2eeaeaed2b2c3ade5fd67cc75b25aabd2aeae63eb3ece211a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"6DwCrC3ygHQHkpqnrGUAeg3Y5C7LlMrM\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=4d5c159763d22cfb2eeaeaed2b2c3ade5fd67cc75b25aabd2aeae63eb3ece211a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%226DwCrC3ygHQHkpqnrGUAeg3Y5C7LlMrM%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '26701'
+    'REDIRECT_URL' => '/project/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1564607629.206
+    'REQUEST_TIME' => 1564607629
+    'argv' => []
+    'argc' => 0
+]
+2019-08-03 17:14:11 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "new_project.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('new_project.php', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-03 17:14:09 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '8041821c158e590bd04eea9371505af677f23ae5a5eb15e1b90370f654be57bea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nhyhoBoK7xd7jPe87azZ4W4fsR8iXsx8\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=8041821c158e590bd04eea9371505af677f23ae5a5eb15e1b90370f654be57bea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nhyhoBoK7xd7jPe87azZ4W4fsR8iXsx8%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '27754'
+    'REDIRECT_URL' => '/new_project.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/new_project.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1564841648.77
+    'REQUEST_TIME' => 1564841648
+    'argv' => []
+    'argc' => 0
+]
+2019-08-07 13:25:35 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "new.html". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('new.html', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-07 13:25:34 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '85c7426a3009b9a0b1950669810e4bb3bf4b292108b86afde1944e79c360b6a4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"AG7Uy8neBnaL-4zHoJw3Mwg8Enh8sHT1\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=85c7426a3009b9a0b1950669810e4bb3bf4b292108b86afde1944e79c360b6a4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22AG7Uy8neBnaL-4zHoJw3Mwg8Enh8sHT1%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '49917'
+    'REDIRECT_URL' => '/new.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/new.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1565173534.937
+    'REQUEST_TIME' => 1565173534
+    'argv' => []
+    'argc' => 0
+]
+2019-08-07 13:26:07 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/style.css.map". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/style.css.m...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-07 13:26:07 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '85c7426a3009b9a0b1950669810e4bb3bf4b292108b86afde1944e79c360b6a4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"AG7Uy8neBnaL-4zHoJw3Mwg8Enh8sHT1\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=85c7426a3009b9a0b1950669810e4bb3bf4b292108b86afde1944e79c360b6a4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22AG7Uy8neBnaL-4zHoJw3Mwg8Enh8sHT1%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '49923'
+    'REDIRECT_URL' => '/css/style.css.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/css/style.css.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1565173567.813
+    'REQUEST_TIME' => 1565173567
+    'argv' => []
+    'argc' => 0
+]
+2019-08-19 23:13:22 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "new.html". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('new.html', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-19 23:13:22 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"7-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '43527'
+    'REDIRECT_URL' => '/new.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/new.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1566245602.775
+    'REQUEST_TIME' => 1566245602
+    'argv' => []
+    'argc' => 0
+]
+2019-08-19 23:24:31 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-19 23:24:31 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"7-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '43662'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1566246271.551
+    'REQUEST_TIME' => 1566246271
+    'argv' => []
+    'argc' => 0
+]
+2019-08-19 23:24:53 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-19 23:24:53 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"7-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '43664'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1566246293.424
+    'REQUEST_TIME' => 1566246293
+    'argv' => []
+    'argc' => 0
+]
+2019-08-19 23:24:58 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-19 23:24:58 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"7-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/project/index.php'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '43668'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1566246298.22
+    'REQUEST_TIME' => 1566246298
+    'argv' => []
+    'argc' => 0
+]
+2019-08-19 23:25:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-19 23:25:02 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"7-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '43670'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1566246302.103
+    'REQUEST_TIME' => 1566246302
+    'argv' => []
+    'argc' => 0
+]
+2019-08-19 23:25:40 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/style.css.map". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/style.css.m...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-19 23:25:40 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"7-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '43675'
+    'REDIRECT_URL' => '/css/style.css.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/css/style.css.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1566246340.134
+    'REQUEST_TIME' => 1566246340
+    'argv' => []
+    'argc' => 0
+]
+2019-08-19 23:26:14 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-19 23:26:14 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"7-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/project/index.php'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '43679'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1566246374.208
+    'REQUEST_TIME' => 1566246374
+    'argv' => []
+    'argc' => 0
+]
+2019-08-19 23:36:03 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-08-19 23:36:03 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"7-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=f7c8352e1c657f07d15d7dcde51793734c5d28e07ee60087184c7d3361864ea2a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%227-Jx6YtJBbc-RxtMqt-ilVcTNWvtOEF9%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '43748'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1566246963.089
+    'REQUEST_TIME' => 1566246963
+    'argv' => []
+    'argc' => 0
+]
+2019-09-03 22:12:26 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "new.html". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('new.html', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-03 22:12:26 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'd35fee53e044742295a5d4f00fe4d1c3911c4ae357f2efff1854153b089d9740a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"mTI0GvBFfHnc0oXdYpQ9DxS6ujZsAD_g\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=d35fee53e044742295a5d4f00fe4d1c3911c4ae357f2efff1854153b089d9740a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mTI0GvBFfHnc0oXdYpQ9DxS6ujZsAD_g%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '13245'
+    'REDIRECT_URL' => '/new.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/new.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1567537946.506
+    'REQUEST_TIME' => 1567537946
+    'argv' => []
+    'argc' => 0
+]
+2019-09-07 21:01:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-07 21:01:02 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'd3b4a8ebde0fc12fc8b1c68b48581fdbf601f2608035ddd4e663a51aa00abd56a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FfSR6UlJ-z-nWg6mDFukx-7QywUDjjY6\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=d3b4a8ebde0fc12fc8b1c68b48581fdbf601f2608035ddd4e663a51aa00abd56a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FfSR6UlJ-z-nWg6mDFukx-7QywUDjjY6%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '23946'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1567879262.262
+    'REQUEST_TIME' => 1567879262
+    'argv' => []
+    'argc' => 0
+]
+2019-09-07 21:02:25 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-07 21:02:25 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'd3b4a8ebde0fc12fc8b1c68b48581fdbf601f2608035ddd4e663a51aa00abd56a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FfSR6UlJ-z-nWg6mDFukx-7QywUDjjY6\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=d3b4a8ebde0fc12fc8b1c68b48581fdbf601f2608035ddd4e663a51aa00abd56a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FfSR6UlJ-z-nWg6mDFukx-7QywUDjjY6%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '23950'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1567879345.38
+    'REQUEST_TIME' => 1567879345
+    'argv' => []
+    'argc' => 0
+]
+2019-09-07 21:02:41 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "new.html". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('new.html', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-07 21:02:41 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'd3b4a8ebde0fc12fc8b1c68b48581fdbf601f2608035ddd4e663a51aa00abd56a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FfSR6UlJ-z-nWg6mDFukx-7QywUDjjY6\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=d3b4a8ebde0fc12fc8b1c68b48581fdbf601f2608035ddd4e663a51aa00abd56a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FfSR6UlJ-z-nWg6mDFukx-7QywUDjjY6%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '23955'
+    'REDIRECT_URL' => '/new.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/new.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1567879361.2
+    'REQUEST_TIME' => 1567879361
+    'argv' => []
+    'argc' => 0
+]
+2019-09-07 21:02:50 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-07 21:02:50 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'd3b4a8ebde0fc12fc8b1c68b48581fdbf601f2608035ddd4e663a51aa00abd56a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FfSR6UlJ-z-nWg6mDFukx-7QywUDjjY6\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=d3b4a8ebde0fc12fc8b1c68b48581fdbf601f2608035ddd4e663a51aa00abd56a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FfSR6UlJ-z-nWg6mDFukx-7QywUDjjY6%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '23957'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1567879370.007
+    'REQUEST_TIME' => 1567879370
+    'argv' => []
+    'argc' => 0
+]
+2019-09-07 21:22:18 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/style.css.map". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/style.css.m...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-07 21:22:17 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => 'd3b4a8ebde0fc12fc8b1c68b48581fdbf601f2608035ddd4e663a51aa00abd56a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FfSR6UlJ-z-nWg6mDFukx-7QywUDjjY6\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=d3b4a8ebde0fc12fc8b1c68b48581fdbf601f2608035ddd4e663a51aa00abd56a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FfSR6UlJ-z-nWg6mDFukx-7QywUDjjY6%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '24134'
+    'REDIRECT_URL' => '/css/style.css.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/css/style.css.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1567880537.327
+    'REQUEST_TIME' => 1567880537
+    'argv' => []
+    'argc' => 0
+]
+2019-09-11 10:36:05 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-11 10:36:05 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_COOKIE' => '_csrf-frontend=6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '7790'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1568187365.279
+    'REQUEST_TIME' => 1568187365
+    'argv' => []
+    'argc' => 0
+]
+2019-09-11 11:05:27 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-11 11:05:27 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8010'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1568189127.072
+    'REQUEST_TIME' => 1568189127
+    'argv' => []
+    'argc' => 0
+]
+2019-09-11 11:05:28 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-11 11:05:28 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8017'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1568189128.858
+    'REQUEST_TIME' => 1568189128
+    'argv' => []
+    'argc' => 0
+]
+2019-09-11 11:05:29 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-11 11:05:29 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8020'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1568189129.869
+    'REQUEST_TIME' => 1568189129
+    'argv' => []
+    'argc' => 0
+]
+2019-09-11 11:05:30 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "project/index.php". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('project/index.p...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-11 11:05:30 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8022'
+    'REDIRECT_URL' => '/project/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1568189130.734
+    'REQUEST_TIME' => 1568189130
+    'argv' => []
+    'argc' => 0
+]
+2019-09-11 11:29:51 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/style.css.map". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/style.css.m...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-11 11:29:51 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8459'
+    'REDIRECT_URL' => '/css/style.css.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/css/style.css.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1568190591.033
+    'REQUEST_TIME' => 1568190591
+    'argv' => []
+    'argc' => 0
+]
+2019-09-11 11:46:22 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "toolbar.css.map". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('toolbar.css.map', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-11 11:46:22 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8716'
+    'REDIRECT_URL' => '/toolbar.css.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/toolbar.css.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1568191582.455
+    'REQUEST_TIME' => 1568191582
+    'argv' => []
+    'argc' => 0
+]
+2019-09-11 11:46:22 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/style.css.map". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/style.css.m...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-11 11:46:22 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8720'
+    'REDIRECT_URL' => '/css/style.css.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/css/style.css.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1568191582.928
+    'REQUEST_TIME' => 1568191582
+    'argv' => []
+    'argc' => 0
+]
+2019-09-11 11:46:29 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "new.html". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('new.html', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-11 11:46:29 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_COOKIE' => '_csrf-frontend=6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8721'
+    'REDIRECT_URL' => '/new.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/new.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1568191589.38
+    'REQUEST_TIME' => 1568191589
+    'argv' => []
+    'argc' => 0
+]
+2019-09-11 11:46:29 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/style.css.map". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/style.css.m...', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-11 11:46:29 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf-frontend=6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW%22%3B%7D'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '8723'
+    'REDIRECT_URL' => '/css/style.css.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/css/style.css.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1568191589.824
+    'REQUEST_TIME' => 1568191589
+    'argv' => []
+    'argc' => 0
+]
+2019-09-11 23:13:44 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "new.html". in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('new.html', Array)
+#1 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\localhost\foji-backend\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\localhost\foji-backend\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2019-09-11 23:13:42 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'front.foji'
+    'HTTP_X_REAL_IP' => '127.0.0.1'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://front.foji/'
+    'HTTP_COOKIE' => '_csrf-frontend=6632e56cd9e75208fa50763fa10e7f6b8104ef13ccaa7886e434909980b6e4f6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22B5vmItf-kOJDsM4VFl0yf3-f_ER0_IgW%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\imagemagick;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\git;c:\\ospanel\\modules\\git\\bin;c:\\ospanel\\modules\\git\\mingw\\bin;c:\\ospanel\\modules\\git\\cmd;c:\\ospanel\\modules\\database\\MySQL-5.7-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7-x64+Nginx-1.14;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'front.foji'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/localhost/foji-backend/frontend/web/index.php'
+    'REMOTE_PORT' => '10605'
+    'REDIRECT_URL' => '/new.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/new.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1568232821.377
+    'REQUEST_TIME' => 1568232821
+    'argv' => []
+    'argc' => 0
+]

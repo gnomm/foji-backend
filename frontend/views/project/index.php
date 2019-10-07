@@ -1,6 +1,13 @@
 <?php
 use yii\helpers\Html;
+use yii\grid\GridView;
+/* @var $this yii\web\View */
+/* @var $searchModel common\models\ProjectSearch */
+/* @var $dataProvider yii\data\ActiveDataProvider */
+$this->title = 'Projects';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
+
 
 <main class="project">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=041822d9-495d-475a-bb46-b61dfd7f6c59"
@@ -16,14 +23,16 @@ use yii\helpers\Html;
             <div class="project-information">
                 <header class="project-header">
                     <p class="additional_text_red additional_text_mini">
-                        <?= $project['theme'] ?>
+                        <?= $model['theme'] ?>
                     </p>
-                    <h2><?= $project['name'] ?></h2>
+                    <h2>
+                        <?= $model['name'] ?>
+                    </h2>
                     <p class="text"><span class="city">Город:</span> В базе не указан город</p>
                 </header>
                 <div class="project-content">
                     <div class="project-main-information">
-                        <?= Html::img('images/project/lovestory.jpg', ['class' => 'project-image', 'alt' => $project['name']]) ?>
+                        <?= Html::img('images/project/lovestory.jpg', ['class' => 'project-image', 'alt' => $model['name']]) ?>
                         <div class="project-tabs">
                             <div class="tabs-container">
                                 <ul class="tabs">
@@ -36,7 +45,7 @@ use yii\helpers\Html;
                                 </ul>
                                 <div class="tabs-content">
                                     <div class="text tabs-panel active" data-index="0">
-                                        <?= $project['info'] ?>
+                                        <?= $model['info'] ?>
                                     </div>
                                     <div class="text tabs-panel" data-index="1">
                                         Отзывы о фотопроекте. Весьма существенно следующее: диониссийское
@@ -53,7 +62,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                         <div class="project-included">
-                            <?php if ($project['makeup']): ?>
+                            <?php if ($model['makeup']): ?>
                                 <div class="project-included-item">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +72,7 @@ use yii\helpers\Html;
                                     <p class="text">Макияж</p>
                                 </div>
                             <?php endif; ?>
-                            <?php if ($project['costume']): ?>
+                            <?php if ($model['costume']): ?>
                                 <div class="project-included-item">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +82,7 @@ use yii\helpers\Html;
                                     <p class="text">Костюм</p>
                                 </div>
                             <?php endif; ?>
-                            <?php if ($project['hairstyle']): ?>
+                            <?php if ($model['hairstyle']): ?>
                                 <div class="project-included-item">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +92,7 @@ use yii\helpers\Html;
                                     <p class="text">Прическа</p>
                                 </div>
                             <?php endif; ?>
-                            <?php if ($project['studio']): ?>
+                            <?php if ($model['studio']): ?>
                                 <div class="project-included-item">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -94,9 +103,9 @@ use yii\helpers\Html;
                                 </div>
                             <?php endif; ?>
                         </div>
-                        <?php if ($project['studio']): ?>
+                        <?php if ($model['studio']): ?>
                             <div class="project-studio">
-                                <p class="text"><span>Студия: </span>"<?= $project['studio'] ?>"</p>
+                                <p class="text"><span>Студия: </span>"<?= $model['studio'] ?>"</p>
                             </div>
                         <?php endif; ?>
                         <div class="project-photographer">
@@ -143,8 +152,8 @@ use yii\helpers\Html;
                                     </svg>
                                 </div>
                                 <div class="project-characteristics-text">
-                                    <p class="text"><?= $project['date_start'] ?></p>
-                                    <p class="text"><?= $project['date_end'] ?></p>
+                                    <p class="text"><?= $model['date_start'] ?></p>
+                                    <p class="text"><?= $model['date_end'] ?></p>
                                 </div>
                             </div>
                             <div class="project-characteristics-item">
@@ -157,7 +166,7 @@ use yii\helpers\Html;
                                     </svg>
                                 </div>
                                 <div class="project-characteristics-text">
-                                    <p class="text"><?= $project['time_start'] ?> - <?= $project['time_end'] ?></p>
+                                    <p class="text"><?= $model['time_start'] ?> - <?= $model['time_end'] ?></p>
                                 </div>
                             </div>
                             <div class="project-characteristics-item">
@@ -178,7 +187,7 @@ use yii\helpers\Html;
                                     </svg>
                                 </div>
                                 <div class="project-characteristics-text">
-                                    <p class="text"><?= $project['qty_photos'] ?> шт</p>
+                                    <p class="text"><?= $model['qty_photos'] ?> шт</p>
                                 </div>
                             </div>
                             <div class="project-characteristics-item">
@@ -193,7 +202,7 @@ use yii\helpers\Html;
                                     </svg>
                                 </div>
                                 <div class="project-characteristics-text">
-                                    <p class="text"><?= $project['duration'] ?> час</p>
+                                    <p class="text"><?= $model['duration'] ?> час</p>
                                 </div>
                             </div>
                         </div>
@@ -201,16 +210,16 @@ use yii\helpers\Html;
                             <p class="text"><span>Время обработки фото:</span> 30 дней (нет в БД)</p>
                         </div>
                         <div class="project-payment">
-                            <p class="text"><span>Способ оплаты:</span> <?= $project['payment_method'] ?></p>
+                            <p class="text"><span>Способ оплаты:</span> <?= $model['payment_method'] ?></p>
                         </div>
                         <div class="project-pricing">
                             <div class="project-prepayment">
                                 <p class="text">Предоплата:</p>
-                                <p class="text_big"><?= $project['prepayment'] ?> р.</p>
+                                <p class="text_big"><?= $model['prepayment'] ?> р.</p>
                             </div>
                             <div class="project-price">
                                 <p class="text">Стоимость:</p>
-                                <p class="text_big"><?= $project['price'] ?> р.</p>
+                                <p class="text_big"><?= $model['price'] ?> р.</p>
                             </div>
                         </div>
                         <div class="btn btn_border_red btn_red btn-project">Записаться</div>
@@ -223,7 +232,7 @@ use yii\helpers\Html;
                                     <circle cx="8.33889" cy="7.42644" r="2.62563" stroke="black"
                                             stroke-width="1.5"/>
                                 </svg>
-                                <p class="text"><?= $project['location'] ?></p>
+                                <p class="text"><?= $model['location'] ?></p>
                             </div>
                             <div id="map" class="project-map">
 

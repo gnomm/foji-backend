@@ -72,7 +72,7 @@ AppAsset::register($this);
                         <?php endif; ?>
                     </nav>
                     <nav class="menu">
-                        <?= Html::a('Фотопроекты', ['/'], ['class' => 'menu-link main-menu-link not-main-page']) ?>
+                        <?= Html::a('Фотопроекты', ['./project/index.php'], ['class' => 'menu-link main-menu-link not-main-page']) ?>
                         <?= Html::a('Прошедшие', ['/past'], ['class' => 'menu-link main-menu-link not-main-page']) ?>
                         <?= Html::a('О нас', ['/about'], ['class' => 'menu-link main-menu-link not-main-page']) ?>
                         <?= Html::a('Обратная связь', ['/feedback'], ['class' => 'menu-link main-menu-link not-main-page']) ?>
