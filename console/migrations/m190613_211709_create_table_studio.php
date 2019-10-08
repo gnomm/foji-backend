@@ -33,6 +33,7 @@ class m190613_211709_create_table_studio extends Migration
         $this->dropTable('studio');
         return true;
     }
+    
 
     /*
     // Use up()/down() to run migration code without a transaction.
